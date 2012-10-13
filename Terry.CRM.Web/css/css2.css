@@ -1,0 +1,152 @@
+.unnamed1 {
+	font-size: 9pt;
+	line-height: 13pt;
+}
+.unnamed2 {
+	font-size: 12px;
+	line-height: 22px;
+}
+.unnamed3 {
+	font-size: 12px;
+	line-height: 18px;
+}
+.unnamed4 {
+	font-size: 12px;
+	line-height: 25px;
+}
+.unnamed5 {
+	font-size: 12px;
+	line-height: 32px;
+}
+.css1 {
+	font-size: 9pt;
+}
+TD {
+	FONT-SIZE: 12px
+}
+INPUT {
+	BORDER-TOP-WIDTH: 1px; 
+	BORDER-LEFT-WIDTH: 1px;
+	FONT-SIZE: 12px;
+	BORDER-BOTTOM-WIDTH: 1px;
+	BORDER-RIGHT-WIDTH: 1px;
+	margin-right:10px;
+	
+}
+TEXTAREA {
+	BORDER-TOP-WIDTH: 1px;
+	 BORDER-LEFT-WIDTH: 1px;
+	  FONT-SIZE: 12px; 
+	  BORDER-BOTTOM-WIDTH: 1px;
+	   BORDER-RIGHT-WIDTH: 1px
+}
+SELECT {
+	BORDER-TOP-WIDTH: 1px; 
+	BORDER-LEFT-WIDTH: 1px;
+	 FONT-SIZE: 12px;
+	  BORDER-BOTTOM-WIDTH: 1px;
+	   BORDER-RIGHT-WIDTH: 1px
+}
+SPAN {
+	FONT-SIZE: 12px; POSITION: static
+}
+A:link {
+	COLOR: #54687C; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #54687C; TEXT-DECORATION: none
+}
+a:hover  { color:#428EFF;text-decoration:underline; }
+A.highlight:link {
+	COLOR: red; TEXT-DECORATION: none
+}
+A.highlight:visited {
+	COLOR: red; TEXT-DECORATION: none
+}
+A.highlight:hover {
+	COLOR: red
+}
+A.thisclass:link {
+	FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.thisclass:visited {
+	FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.thisclass:hover {
+	FONT-WEIGHT: bold
+}
+A.navlink:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.navlink:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.navlink:hover {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.twidth {
+	WIDTH: 760px
+}
+.content {
+	FONT-SIZE: 14px; MARGIN: 5px 20px; LINE-HEIGHT: 140%; FONT-FAMILY: Tahoma,ËÎÌו
+}
+.aTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 15px
+}
+.Row {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 3px; BACKGROUND: #F1F3F5; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+.Head {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px;COLOR: white; height:25px;background:url(../images/TableHeader.gif); background-repeat:repeat-x;
+}
+TD.forumHeaderBackgroundAlternate {
+	BACKGROUND-IMAGE: url(../images/manage/admin_top_bg.gif); COLOR: #000000; BACKGROUND-COLOR: #799ae1
+}
+#TableTitleLink A:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+#TableTitleLink A:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+#TableTitleLink A:active {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+#TableTitleLink A:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+TD.bodytitle {
+	BACKGROUND-IMAGE: url(../image/admin_bg_2.gif)
+}
+TD.bodytitle1 {
+	BACKGROUND-IMAGE: url(../image/admin_bg_3.gif)
+}
+TD.tablebody1 {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; BACKGROUND: #bebbdb; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+TD.forumRowHighlight {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; BACKGROUND: #E4EDF9; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+.tableBorder {
+	BORDER-RIGHT: #183789 1px solid;
+	 border-top: #183789 1px solid;
+	  BORDER-LEFT: #183789 1px solid; 
+	  BORDER-BOTTOM: #183789 1px solid;
+	   BACKGROUND-COLOR: #ffffff;
+	   padding-left:3px;
+}
+.tableBorder1 {WIDTH: 98%; }
+.helplink {
+	FONT: 10px verdana,arial,helvetica,sans-serif; CURSOR: help; TEXT-DECORATION: none
+}
+.copyright {
+	PADDING-RIGHT: 1px; BORDER-TOP: #6595d6 1px dashed; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; FONT: 11px verdana,arial,helvetica,sans-serif; COLOR: #4455aa; PADDING-TOP: 1px; TEXT-DECORATION: none
+}
+
+body { background:#BEDCE6; font-size: 12px; margin-top:0px;
+SCROLLBAR-FACE-COLOR: #80B3E7; SCROLLBAR-HIGHLIGHT-COLOR: #80B3E7; 
+SCROLLBAR-SHADOW-COLOR: #80B3E7; SCROLLBAR-DARKSHADOW-COLOR: #80B3E7; 
+SCROLLBAR-3DLIGHT-COLOR: #80B3E7; SCROLLBAR-ARROW-COLOR: #FFFFFF;
+SCROLLBAR-TRACK-COLOR: #D4DCE5;
+font-family:Arial;
+}
+.require{color:Red;}

@@ -1,0 +1,1498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DateFormatString" xml:space="preserve">
+    <value>{0:yyyy-MM-dd}</value>
+    <comment>GridView 时间列的DataformatString</comment>
+  </data>
+  <data name="DateFormatStringCS" xml:space="preserve">
+    <value>yyyy-MM-dd</value>
+    <comment>.cs所用 DataformatString</comment>
+  </data>
+  <data name="DateTimeFormatStringCS" xml:space="preserve">
+    <value>yyyy-MM-dd HH:mm:ss</value>
+    <comment>CS文件的DateTime显示格式</comment>
+  </data>
+  <data name="DDLAll" xml:space="preserve">
+    <value>所有</value>
+  </data>
+  <data name="DDLSelected" xml:space="preserve">
+    <value>---选择---</value>
+  </data>
+  <data name="lblAddress" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="lblAmount" xml:space="preserve">
+    <value>总金额</value>
+  </data>
+  <data name="lblBack" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="lblCancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="lblChangePassword" xml:space="preserve">
+    <value>修改密码</value>
+  </data>
+  <data name="lblClose" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="lblCompany" xml:space="preserve">
+    <value>公司</value>
+  </data>
+  <data name="lblCompanyName" xml:space="preserve">
+    <value>公司名称</value>
+  </data>
+  <data name="lblConfirm" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="lblConfirmed" xml:space="preserve">
+    <value>已确认</value>
+  </data>
+  <data name="lblContactMan" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="lblCreateDate" xml:space="preserve">
+    <value>创建日期</value>
+  </data>
+  <data name="lblCurrency" xml:space="preserve">
+    <value>货币</value>
+  </data>
+  <data name="lblCurrencyCode" xml:space="preserve">
+    <value>货币编号</value>
+  </data>
+  <data name="lblCustomer" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="lblCustomerName" xml:space="preserve">
+    <value>客户名称</value>
+  </data>
+  <data name="lblDelete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="lblEdit" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="lblEnglish" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="lblHome" xml:space="preserve">
+    <value>首页</value>
+  </data>
+  <data name="lblID" xml:space="preserve">
+    <value>序号</value>
+  </data>
+  <data name="lblLanguage" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="lblLoginUser" xml:space="preserve">
+    <value>用戶名稱</value>
+  </data>
+  <data name="lblModifyDate" xml:space="preserve">
+    <value>修改日期</value>
+  </data>
+  <data name="lblModifyUser" xml:space="preserve">
+    <value>修改用户</value>
+  </data>
+  <data name="lblNewPassword" xml:space="preserve">
+    <value>新密码</value>
+  </data>
+  <data name="lblOldPassword" xml:space="preserve">
+    <value>旧密码</value>
+  </data>
+  <data name="lblOrder" xml:space="preserve">
+    <value>订单</value>
+  </data>
+  <data name="lblOrderDate" xml:space="preserve">
+    <value>订单日期</value>
+  </data>
+  <data name="lblOrderInfo" xml:space="preserve">
+    <value>订单信息</value>
+  </data>
+  <data name="lblPassword" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="lblPhone" xml:space="preserve">
+    <value>电话</value>
+  </data>
+  <data name="lblPrice" xml:space="preserve">
+    <value>单价</value>
+  </data>
+  <data name="lblProdcuctSupplier" xml:space="preserve">
+    <value>供应商</value>
+  </data>
+  <data name="lblProduct" xml:space="preserve">
+    <value>产品</value>
+  </data>
+  <data name="lblQty" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="lblRecords" xml:space="preserve">
+    <value>记录</value>
+  </data>
+  <data name="lblRegion" xml:space="preserve">
+    <value>地区</value>
+  </data>
+  <data name="lblRemark" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="lblReport" xml:space="preserve">
+    <value>报表</value>
+  </data>
+  <data name="lblSave" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="lblSearch" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="lblSimpChinese" xml:space="preserve">
+    <value>简体中文</value>
+  </data>
+  <data name="lblStatus" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="lblTotalAmount" xml:space="preserve">
+    <value>总计金额</value>
+  </data>
+  <data name="lblTotalQty" xml:space="preserve">
+    <value>总计数量</value>
+  </data>
+  <data name="lblTradChinese" xml:space="preserve">
+    <value>繁體中文</value>
+  </data>
+  <data name="MsgAccessDeny" xml:space="preserve">
+    <value>您没有权限访问</value>
+  </data>
+  <data name="MsgAddress" xml:space="preserve">
+    <value>地址不能为空</value>
+  </data>
+  <data name="MsgCannotDelete" xml:space="preserve">
+    <value>不能删除，有关联数据</value>
+  </data>
+  <data name="MsgChangePwdFail" xml:space="preserve">
+    <value>更改密码失败</value>
+  </data>
+  <data name="MsgCompany" xml:space="preserve">
+    <value>公司编号不能为空</value>
+  </data>
+  <data name="MsgCompanyName" xml:space="preserve">
+    <value>公司名称不能为空</value>
+  </data>
+  <data name="MsgCustomer" xml:space="preserve">
+    <value>客户编号不能为空</value>
+  </data>
+  <data name="MsgCustomerName" xml:space="preserve">
+    <value>客户名称不能为空</value>
+  </data>
+  <data name="MsgDeleteConfirm" xml:space="preserve">
+    <value>您确认要删除吗?</value>
+  </data>
+  <data name="MsgDeleteFail" xml:space="preserve">
+    <value>删除失败</value>
+  </data>
+  <data name="MsgDeleteOK" xml:space="preserve">
+    <value>删除成功</value>
+  </data>
+  <data name="MsgPassword" xml:space="preserve">
+    <value>密码不能为空</value>
+  </data>
+  <data name="MsgPhone" xml:space="preserve">
+    <value>电话不能为空</value>
+  </data>
+  <data name="MsgRemark" xml:space="preserve">
+    <value>备注不能超过255字符</value>
+  </data>
+  <data name="MsgRetypePassword" xml:space="preserve">
+    <value>两次输入的密码不一样</value>
+  </data>
+  <data name="MsgSaveConfirm" xml:space="preserve">
+    <value>您确认要保存吗？</value>
+  </data>
+  <data name="MsgSaveFail" xml:space="preserve">
+    <value>保存失败</value>
+  </data>
+  <data name="MsgSaveOK" xml:space="preserve">
+    <value>保存成功</value>
+  </data>
+  <data name="MsgSearch" xml:space="preserve">
+    <value>请输入搜索条件</value>
+  </data>
+  <data name="MsgSessionTimeOut" xml:space="preserve">
+    <value>超时，请重新登录</value>
+  </data>
+  <data name="MsgUserName" xml:space="preserve">
+    <value>用户名不能为空</value>
+  </data>
+  <data name="MsgVerifyDate" xml:space="preserve">
+    <value>确认日期不能为空</value>
+  </data>
+  <data name="MsgVerifyUser" xml:space="preserve">
+    <value>确认人不能为空</value>
+  </data>
+  <data name="lblOpportunity" xml:space="preserve">
+    <value>销售机会</value>
+  </data>
+  <data name="lblSchedule" xml:space="preserve">
+    <value>日程任务</value>
+  </data>
+  <data name="lblSystem" xml:space="preserve">
+    <value>公司信息</value>
+  </data>
+  <data name="lblFooter" xml:space="preserve">
+    <value>请使用 &lt;a href='http://www.microsoft.com/china/windows/internet-explorer/default.aspx' target='_blank'&gt;IE8&lt;/a&gt;/ &lt;a href='http://www.mozillaonline.com/' target='_blank'&gt;FireFox&lt;/a&gt; / &lt;a href='http://www.google.com/chrome/' target='_blank'&gt;谷歌&lt;/a&gt; 浏览器，获得更好用户体验&amp;nbsp; &amp;nbsp;
+CPG客户关系管理系统 &amp;copy;2010</value>
+  </data>
+  <data name="lblHelp" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="lblLogout" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="lblNew" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="lblCustomerCode" xml:space="preserve">
+    <value>客户编号</value>
+  </data>
+  <data name="lblCustomerType" xml:space="preserve">
+    <value>客户类型</value>
+  </data>
+  <data name="lblTotalRecords" xml:space="preserve">
+    <value>记录总数</value>
+  </data>
+  <data name="lblCustomerFax" xml:space="preserve">
+    <value>客户传真</value>
+  </data>
+  <data name="lblCustomerTel" xml:space="preserve">
+    <value>客户电话</value>
+  </data>
+  <data name="MsgSYSID" xml:space="preserve">
+    <value>系统ID不能为空</value>
+  </data>
+  <data name="MsgSYSName" xml:space="preserve">
+    <value>系统名不能为空</value>
+  </data>
+  <data name="MsgSYSWeb" xml:space="preserve">
+    <value>系统的网址不能为空</value>
+  </data>
+  <data name="MsgSYSContact" xml:space="preserve">
+    <value>系统联系人不能为空</value>
+  </data>
+  <data name="MsgSYSContactTel" xml:space="preserve">
+    <value>系统连续电话不能为空</value>
+  </data>
+  <data name="MsgSYSCDate" xml:space="preserve">
+    <value>系统创建时间不能为空</value>
+  </data>
+  <data name="MsgSYSBeginDate" xml:space="preserve">
+    <value>系统开始日期不能为空</value>
+  </data>
+  <data name="MsgSYSExpiryDate" xml:space="preserve">
+    <value>系统过期日期不能为空</value>
+  </data>
+  <data name="MsgContactID" xml:space="preserve">
+    <value>ID不能为空</value>
+  </data>
+  <data name="MsgContactName" xml:space="preserve">
+    <value>名字不能为空</value>
+  </data>
+  <data name="MsgContactSex" xml:space="preserve">
+    <value>性别不能为空</value>
+  </data>
+  <data name="MsgContactTypeID" xml:space="preserve">
+    <value>类型不能为空</value>
+  </data>
+  <data name="MsgContactDept" xml:space="preserve">
+    <value>部门不能为空</value>
+  </data>
+  <data name="MsgContactTitle" xml:space="preserve">
+    <value>称谓不能为空</value>
+  </data>
+  <data name="MsgContactTel" xml:space="preserve">
+    <value>电话不能为空</value>
+  </data>
+  <data name="MsgContactMobile" xml:space="preserve">
+    <value>手机不能为空</value>
+  </data>
+  <data name="MsgContactEmail" xml:space="preserve">
+    <value>Email不能为空</value>
+  </data>
+  <data name="MsgContactMSN" xml:space="preserve">
+    <value>MSN 不能为空</value>
+  </data>
+  <data name="MsgContactQQ" xml:space="preserve">
+    <value>QQ 不能为空</value>
+  </data>
+  <data name="MsgContactFax" xml:space="preserve">
+    <value>传真不能为空</value>
+  </data>
+  <data name="MsgContactCustID" xml:space="preserve">
+    <value>所属客户编号不能为空</value>
+  </data>
+  <data name="MsgCustTypeID" xml:space="preserve">
+    <value>类型不能为空</value>
+  </data>
+  <data name="MsgCustType" xml:space="preserve">
+    <value>类型不能为空</value>
+  </data>
+  <data name="MsgIndustryID" xml:space="preserve">
+    <value>行业不能为空</value>
+  </data>
+  <data name="MsgIndustry" xml:space="preserve">
+    <value>行业不能为空</value>
+  </data>
+  <data name="MsgRelationID" xml:space="preserve">
+    <value>客户关系ID 不能为空</value>
+  </data>
+  <data name="MsgRelation" xml:space="preserve">
+    <value>客户关系不能为空</value>
+  </data>
+  <data name="MsgID" xml:space="preserve">
+    <value>ID 不能为空</value>
+  </data>
+  <data name="MsgEmpNum" xml:space="preserve">
+    <value>公司规模不能为空</value>
+  </data>
+  <data name="MsgCustFrom" xml:space="preserve">
+    <value>客户来源不能为空</value>
+  </data>
+  <data name="MsgCustStatus" xml:space="preserve">
+    <value>客户状态不能为空</value>
+  </data>
+  <data name="MsgCountryID" xml:space="preserve">
+    <value>国家不能为空</value>
+  </data>
+  <data name="MsgCountry" xml:space="preserve">
+    <value>国家不能为空</value>
+  </data>
+  <data name="MsgContactType" xml:space="preserve">
+    <value>类型不能为空</value>
+  </data>
+  <data name="MsgOPPPhase" xml:space="preserve">
+    <value>机会阶段不能为空</value>
+  </data>
+  <data name="MsgOPPStatus" xml:space="preserve">
+    <value>机会状态 不能为空</value>
+  </data>
+  <data name="MsgACTID" xml:space="preserve">
+    <value>编号不能为空</value>
+  </data>
+  <data name="MsgACTUser" xml:space="preserve">
+    <value>参与人员 不能为空</value>
+  </data>
+  <data name="MsgOPPID" xml:space="preserve">
+    <value>机会ID 不能为空</value>
+  </data>
+  <data name="MsgOPPCustID" xml:space="preserve">
+    <value>客户ID不能为空</value>
+  </data>
+  <data name="MsgOPPRequest" xml:space="preserve">
+    <value>机会需求 不能为空</value>
+  </data>
+  <data name="MsgOPPOwner" xml:space="preserve">
+    <value>机会所有人不能为空</value>
+  </data>
+  <data name="MsgOPPFromID" xml:space="preserve">
+    <value>机会来源ID 不能为空</value>
+  </data>
+  <data name="MsgOPPExpectDate" xml:space="preserve">
+    <value>机会预期实施日期不能为空</value>
+  </data>
+  <data name="MsgOPPExpectAmount" xml:space="preserve">
+    <value>机会预期金额不能为空</value>
+  </data>
+  <data name="MsgOPPPhaseID" xml:space="preserve">
+    <value>机会阶段不能为空</value>
+  </data>
+  <data name="MsgOPPProbability" xml:space="preserve">
+    <value>机会可能性不能为空</value>
+  </data>
+  <data name="MsgOPPStatusID" xml:space="preserve">
+    <value>机会状态不能为空</value>
+  </data>
+  <data name="MsgOPPRemark" xml:space="preserve">
+    <value>机会备注不能为空</value>
+  </data>
+  <data name="MsgOPPCDate" xml:space="preserve">
+    <value>创建日期 不能为空</value>
+  </data>
+  <data name="MsgOPPCUser" xml:space="preserve">
+    <value>创建人不能为空</value>
+  </data>
+  <data name="MsgOPPModifyDate" xml:space="preserve">
+    <value>修改时间不能为空</value>
+  </data>
+  <data name="MsgOPPModifyUser" xml:space="preserve">
+    <value>修改人不能为空</value>
+  </data>
+  <data name="MsgACTSubject" xml:space="preserve">
+    <value>行动主题不能为空</value>
+  </data>
+  <data name="MsgACTType" xml:space="preserve">
+    <value>类型不能为空</value>
+  </data>
+  <data name="MsgACTBeginDate" xml:space="preserve">
+    <value>行动开始日期 不能为空</value>
+  </data>
+  <data name="MsgACTEndDate" xml:space="preserve">
+    <value>行动结束日期不能为空</value>
+  </data>
+  <data name="MsgACTContent" xml:space="preserve">
+    <value>内容不能为空</value>
+  </data>
+  <data name="MsgACTOPPID" xml:space="preserve">
+    <value>所属机会 不能为空</value>
+  </data>
+  <data name="MsgACTCDate" xml:space="preserve">
+    <value>创建日期不能为空</value>
+  </data>
+  <data name="MsgACTCUser" xml:space="preserve">
+    <value>创建人 不能为空</value>
+  </data>
+  <data name="MsgACTModifyDate" xml:space="preserve">
+    <value>修改日期 不能为空</value>
+  </data>
+  <data name="MsgACTModifyUser" xml:space="preserve">
+    <value>修改人 不能为空</value>
+  </data>
+  <data name="MsgRoleID" xml:space="preserve">
+    <value>角色ID不能为空</value>
+  </data>
+  <data name="MsgRole" xml:space="preserve">
+    <value>角色不能为空</value>
+  </data>
+  <data name="MsgUserID" xml:space="preserve">
+    <value>用户ID不能为空</value>
+  </data>
+  <data name="MsgProdID" xml:space="preserve">
+    <value>产品ID不能为空</value>
+  </data>
+  <data name="MsgProduct" xml:space="preserve">
+    <value>产品不能为空</value>
+  </data>
+  <data name="MsgUserFullName" xml:space="preserve">
+    <value>用户全名不能为空</value>
+  </data>
+  <data name="MsgMobile" xml:space="preserve">
+    <value>手机不能为空</value>
+  </data>
+  <data name="MsgCDate" xml:space="preserve">
+    <value>CDate 不能为空</value>
+  </data>
+  <data name="MsgCUser" xml:space="preserve">
+    <value>创建人不能为空</value>
+  </data>
+  <data name="MsgModifyDate" xml:space="preserve">
+    <value>修改日期不能为空</value>
+  </data>
+  <data name="MsgModifyUser" xml:space="preserve">
+    <value>修改人不能为空</value>
+  </data>
+  <data name="MsgIsActive" xml:space="preserve">
+    <value>IsActive 不能为空</value>
+  </data>
+  <data name="MsgBossID" xml:space="preserve">
+    <value>BossID 不能为空</value>
+  </data>
+  <data name="MsgCustID" xml:space="preserve">
+    <value>ID 不能为空</value>
+  </data>
+  <data name="MsgCustCode" xml:space="preserve">
+    <value>编号不能为空</value>
+  </data>
+  <data name="MsgCustName" xml:space="preserve">
+    <value>客户名称不能为空</value>
+  </data>
+  <data name="MsgCustFullName" xml:space="preserve">
+    <value>客户全名不能为空</value>
+  </data>
+  <data name="MsgCustRelationID" xml:space="preserve">
+    <value>客户关系不能为空</value>
+  </data>
+  <data name="MsgCustIndustryID" xml:space="preserve">
+    <value>行业不能为空</value>
+  </data>
+  <data name="MsgCustEmpNumID" xml:space="preserve">
+    <value>企业规模不能为空</value>
+  </data>
+  <data name="MsgCustFromID" xml:space="preserve">
+    <value>客户来源不能为空</value>
+  </data>
+  <data name="MsgCustStatusID" xml:space="preserve">
+    <value>客户状态不能为空</value>
+  </data>
+  <data name="MsgCustInfo" xml:space="preserve">
+    <value>CustInfo 不能为空</value>
+  </data>
+  <data name="MsgCustCountryID" xml:space="preserve">
+    <value>国家不能为空</value>
+  </data>
+  <data name="MsgCustProvince" xml:space="preserve">
+    <value>省份不能为空</value>
+  </data>
+  <data name="MsgCustCity" xml:space="preserve">
+    <value>城市不能为空</value>
+  </data>
+  <data name="MsgCustDistinct" xml:space="preserve">
+    <value>区域不能为空</value>
+  </data>
+  <data name="MsgCustAddress" xml:space="preserve">
+    <value>地址不能为空</value>
+  </data>
+  <data name="MsgCustTel" xml:space="preserve">
+    <value>电话不能为空</value>
+  </data>
+  <data name="MsgCustFax" xml:space="preserve">
+    <value>传真不能为空</value>
+  </data>
+  <data name="MsgCustWeb" xml:space="preserve">
+    <value>网址不能为空</value>
+  </data>
+  <data name="MsgCustCDate" xml:space="preserve">
+    <value>创建日期不能为空</value>
+  </data>
+  <data name="MsgCustCUserID" xml:space="preserve">
+    <value>CustCUserID 不能为空</value>
+  </data>
+  <data name="MsgCustModifyDate" xml:space="preserve">
+    <value>修改日期不能为空</value>
+  </data>
+  <data name="MsgCustModifyUserID" xml:space="preserve">
+    <value>修改人不能为空</value>
+  </data>
+  <data name="MsgCustOwnerID" xml:space="preserve">
+    <value>负责人不能为空</value>
+  </data>
+  <data name="MsgLogID" xml:space="preserve">
+    <value>LogID 不能为空</value>
+  </data>
+  <data name="MsgLogTableName" xml:space="preserve">
+    <value>LogTableName 不能为空</value>
+  </data>
+  <data name="MsgLogPKID" xml:space="preserve">
+    <value>LogPKID 不能为空</value>
+  </data>
+  <data name="MsgLogContent" xml:space="preserve">
+    <value>LogContent 不能为空</value>
+  </data>
+  <data name="MsgLogDate" xml:space="preserve">
+    <value>LogDate 不能为空</value>
+  </data>
+  <data name="MsgLogUser" xml:space="preserve">
+    <value>LogUser 不能为空</value>
+  </data>
+  <data name="lblACTBeginDate" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="lblACTCDate" xml:space="preserve">
+    <value>创建日期</value>
+  </data>
+  <data name="lblACTContent" xml:space="preserve">
+    <value>谈话内容</value>
+  </data>
+  <data name="lblACTCUser" xml:space="preserve">
+    <value>创建人</value>
+  </data>
+  <data name="lblACTEndDate" xml:space="preserve">
+    <value>行动结束日期</value>
+  </data>
+  <data name="lblACTID" xml:space="preserve">
+    <value>行动编号</value>
+  </data>
+  <data name="lblAction" xml:space="preserve">
+    <value>行动记录</value>
+  </data>
+  <data name="lblActionUsers" xml:space="preserve">
+    <value>参与人员</value>
+  </data>
+  <data name="lblACTModifyDate" xml:space="preserve">
+    <value>修改日期</value>
+  </data>
+  <data name="lblACTModifyUser" xml:space="preserve">
+    <value>修改人</value>
+  </data>
+  <data name="lblACTOPPID" xml:space="preserve">
+    <value>所属机会</value>
+  </data>
+  <data name="lblACTSubject" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="lblACTType" xml:space="preserve">
+    <value>行动类型</value>
+  </data>
+  <data name="lblActualQty" xml:space="preserve">
+    <value>Actual Qty</value>
+  </data>
+  <data name="lblACTUser" xml:space="preserve">
+    <value>参与人员</value>
+  </data>
+  <data name="lblAuditLog" xml:space="preserve">
+    <value>系统日志</value>
+  </data>
+  <data name="lblBaseInfo" xml:space="preserve">
+    <value>基础信息</value>
+  </data>
+  <data name="lblBeginDate" xml:space="preserve">
+    <value>开始日期</value>
+  </data>
+  <data name="lblBestSalesReport" xml:space="preserve">
+    <value>Best sales of product</value>
+  </data>
+  <data name="lblBillingInformation" xml:space="preserve">
+    <value>Billing Information</value>
+  </data>
+  <data name="lblBillType" xml:space="preserve">
+    <value>BillType</value>
+  </data>
+  <data name="lblBlank" xml:space="preserve">
+    <value>空白</value>
+  </data>
+  <data name="lblBossID" xml:space="preserve">
+    <value>上级领导</value>
+  </data>
+  <data name="lblBrand" xml:space="preserve">
+    <value>牌号</value>
+  </data>
+  <data name="lblCancelled" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="lblCargoIn" xml:space="preserve">
+    <value>GoodsIn</value>
+  </data>
+  <data name="lblCDate" xml:space="preserve">
+    <value>创建日期</value>
+  </data>
+  <data name="lblCompleted" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="lblContact" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="lblContactCustID" xml:space="preserve">
+    <value>所属客户</value>
+  </data>
+  <data name="lblContactDept" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="lblContactEmail" xml:space="preserve">
+    <value>电邮</value>
+  </data>
+  <data name="lblContactFax" xml:space="preserve">
+    <value>传真</value>
+  </data>
+  <data name="lblContactID" xml:space="preserve">
+    <value>联络人ID</value>
+  </data>
+  <data name="lblContactMobile" xml:space="preserve">
+    <value>手机</value>
+  </data>
+  <data name="lblContactMSN" xml:space="preserve">
+    <value>MSN</value>
+  </data>
+  <data name="lblContactName" xml:space="preserve">
+    <value>名字</value>
+  </data>
+  <data name="lblContactQQ" xml:space="preserve">
+    <value>QQ</value>
+  </data>
+  <data name="lblContactSex" xml:space="preserve">
+    <value>性别</value>
+  </data>
+  <data name="lblContactTel" xml:space="preserve">
+    <value>电话</value>
+  </data>
+  <data name="lblContactTitle" xml:space="preserve">
+    <value>称谓</value>
+  </data>
+  <data name="lblContactType" xml:space="preserve">
+    <value>联络人类型</value>
+  </data>
+  <data name="lblContactTypeID" xml:space="preserve">
+    <value>联络人类型</value>
+  </data>
+  <data name="lblCopy" xml:space="preserve">
+    <value>拷贝</value>
+  </data>
+  <data name="lblCountry" xml:space="preserve">
+    <value>国家</value>
+  </data>
+  <data name="lblCountryID" xml:space="preserve">
+    <value>国家</value>
+  </data>
+  <data name="lblCurrentQty" xml:space="preserve">
+    <value>Current Qty</value>
+  </data>
+  <data name="lblCUser" xml:space="preserve">
+    <value>创建人</value>
+  </data>
+  <data name="lblCustAddress" xml:space="preserve">
+    <value>客户地址</value>
+  </data>
+  <data name="lblCustCDate" xml:space="preserve">
+    <value>创建日期</value>
+  </data>
+  <data name="lblCustCity" xml:space="preserve">
+    <value>城市</value>
+  </data>
+  <data name="lblCustCode" xml:space="preserve">
+    <value>客户编码</value>
+  </data>
+  <data name="lblCustCountryID" xml:space="preserve">
+    <value>所属国家</value>
+  </data>
+  <data name="lblCustCUserID" xml:space="preserve">
+    <value>创建人</value>
+  </data>
+  <data name="lblCustDistinct" xml:space="preserve">
+    <value>区</value>
+  </data>
+  <data name="lblCustEmpNumID" xml:space="preserve">
+    <value>公司规模</value>
+  </data>
+  <data name="lblCustFax" xml:space="preserve">
+    <value>传真</value>
+  </data>
+  <data name="lblCustFrom" xml:space="preserve">
+    <value>客户来源</value>
+  </data>
+  <data name="lblCustFromID" xml:space="preserve">
+    <value>客户来源</value>
+  </data>
+  <data name="lblCustFullName" xml:space="preserve">
+    <value>客户全名</value>
+  </data>
+  <data name="lblCustID" xml:space="preserve">
+    <value>客户ID</value>
+  </data>
+  <data name="lblCustIndustryID" xml:space="preserve">
+    <value>所属行业</value>
+  </data>
+  <data name="lblCustInfo" xml:space="preserve">
+    <value>采购习惯</value>
+  </data>
+  <data name="lblCustModifyDate" xml:space="preserve">
+    <value>修改日期</value>
+  </data>
+  <data name="lblCustModifyUserID" xml:space="preserve">
+    <value>修改人</value>
+  </data>
+  <data name="lblCustName" xml:space="preserve">
+    <value>客户简称</value>
+  </data>
+  <data name="lblCustomerEmpNum" xml:space="preserve">
+    <value>公司规模</value>
+  </data>
+  <data name="lblCustomerFrom" xml:space="preserve">
+    <value>客户来源</value>
+  </data>
+  <data name="lblCustomerIndustry" xml:space="preserve">
+    <value>所属行业</value>
+  </data>
+  <data name="lblCustomerRelation" xml:space="preserve">
+    <value>客户级别</value>
+  </data>
+  <data name="lblCustomerStatus" xml:space="preserve">
+    <value>客户状态</value>
+  </data>
+  <data name="lblCustOwnerID" xml:space="preserve">
+    <value>销售人员</value>
+  </data>
+  <data name="lblCustProvince" xml:space="preserve">
+    <value>省份</value>
+  </data>
+  <data name="lblCustRelationID" xml:space="preserve">
+    <value>客户级别</value>
+  </data>
+  <data name="lblCustStatus" xml:space="preserve">
+    <value>客户状态</value>
+  </data>
+  <data name="lblCustStatusID" xml:space="preserve">
+    <value>客户状态</value>
+  </data>
+  <data name="lblCustTel" xml:space="preserve">
+    <value>电话</value>
+  </data>
+  <data name="lblCustType" xml:space="preserve">
+    <value>客户类型</value>
+  </data>
+  <data name="lblCustTypeID" xml:space="preserve">
+    <value>客户类型</value>
+  </data>
+  <data name="lblCustWeb" xml:space="preserve">
+    <value>网址</value>
+  </data>
+  <data name="lblDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lblDisPlay" xml:space="preserve">
+    <value>显示</value>
+  </data>
+  <data name="lblDocument" xml:space="preserve">
+    <value>文档</value>
+  </data>
+  <data name="lblEmpNum" xml:space="preserve">
+    <value>公司规模</value>
+  </data>
+  <data name="lblEndDate" xml:space="preserve">
+    <value>EndDate</value>
+  </data>
+  <data name="lblExpiryDate" xml:space="preserve">
+    <value>保修结束日期</value>
+  </data>
+  <data name="lblExport" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="lblExportDiff" xml:space="preserve">
+    <value>Export the different items and check again</value>
+  </data>
+  <data name="lblFactory" xml:space="preserve">
+    <value>工厂</value>
+  </data>
+  <data name="lblFactoryName" xml:space="preserve">
+    <value>工厂名称</value>
+  </data>
+  <data name="lblGoods" xml:space="preserve">
+    <value>货物</value>
+  </data>
+  <data name="lblIndustry" xml:space="preserve">
+    <value>行业</value>
+  </data>
+  <data name="lblIndustryID" xml:space="preserve">
+    <value>行业</value>
+  </data>
+  <data name="lblInvoice" xml:space="preserve">
+    <value>发票</value>
+  </data>
+  <data name="lblIsActive" xml:space="preserve">
+    <value>是否有效</value>
+  </data>
+  <data name="lblIsCancel" xml:space="preserve">
+    <value>是否取消</value>
+  </data>
+  <data name="lblIsComplete" xml:space="preserve">
+    <value>是否完成</value>
+  </data>
+  <data name="lblIsVerify" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="lblItemID" xml:space="preserve">
+    <value>ItemID</value>
+  </data>
+  <data name="lblLogContent" xml:space="preserve">
+    <value>日志内容</value>
+  </data>
+  <data name="lblLogDate" xml:space="preserve">
+    <value>日志日期</value>
+  </data>
+  <data name="lblLogID" xml:space="preserve">
+    <value>日志ID</value>
+  </data>
+  <data name="lblLogistics" xml:space="preserve">
+    <value>物流公司</value>
+  </data>
+  <data name="lblLogisticsAccount" xml:space="preserve">
+    <value>公司账号</value>
+  </data>
+  <data name="lblLogisticsFee" xml:space="preserve">
+    <value>物流费用</value>
+  </data>
+  <data name="lblLogisticsName" xml:space="preserve">
+    <value>物流公司名</value>
+  </data>
+  <data name="lblLogisticsNo" xml:space="preserve">
+    <value>送货单号</value>
+  </data>
+  <data name="lblLogPKID" xml:space="preserve">
+    <value>日志关联ID</value>
+  </data>
+  <data name="lblLogTableName" xml:space="preserve">
+    <value>日志关联表</value>
+  </data>
+  <data name="lblLogUser" xml:space="preserve">
+    <value>日志用户</value>
+  </data>
+  <data name="lblLotNo" xml:space="preserve">
+    <value>批号</value>
+  </data>
+  <data name="lblMobile" xml:space="preserve">
+    <value>手机</value>
+  </data>
+  <data name="lblName" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="lblNewItem" xml:space="preserve">
+    <value>新建明细</value>
+  </data>
+  <data name="lblNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="lblOPPCDate" xml:space="preserve">
+    <value>创建日期</value>
+  </data>
+  <data name="lblOPPCUser" xml:space="preserve">
+    <value>创建人</value>
+  </data>
+  <data name="lblOPPCustID" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="lblOPPExpectAmount" xml:space="preserve">
+    <value>机会预计金额</value>
+  </data>
+  <data name="lblOPPExpectDate" xml:space="preserve">
+    <value>预计实施日期</value>
+  </data>
+  <data name="lblOPPFromID" xml:space="preserve">
+    <value>机会来源</value>
+  </data>
+  <data name="lblOPPID" xml:space="preserve">
+    <value>机会ID</value>
+  </data>
+  <data name="lblOPPModifyDate" xml:space="preserve">
+    <value>修改日期</value>
+  </data>
+  <data name="lblOPPModifyUser" xml:space="preserve">
+    <value>修改人</value>
+  </data>
+  <data name="lblOpportunityPhase" xml:space="preserve">
+    <value>所在阶段</value>
+  </data>
+  <data name="lblOpportunityProd" xml:space="preserve">
+    <value>关联产品</value>
+  </data>
+  <data name="lblOpportunityStatus" xml:space="preserve">
+    <value>机会状态</value>
+  </data>
+  <data name="lblOPPOwner" xml:space="preserve">
+    <value>机会负责人</value>
+  </data>
+  <data name="lblOPPPhase" xml:space="preserve">
+    <value>所在阶段</value>
+  </data>
+  <data name="lblOPPPhaseID" xml:space="preserve">
+    <value>所在阶段</value>
+  </data>
+  <data name="lblOPPProbability" xml:space="preserve">
+    <value>机会可能性</value>
+  </data>
+  <data name="lblOPPRemark" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="lblOPPRequest" xml:space="preserve">
+    <value>机会需求</value>
+  </data>
+  <data name="lblOPPStatus" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="lblOPPStatusID" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="lblOrderID" xml:space="preserve">
+    <value>Order ID</value>
+  </data>
+  <data name="lblOrderInfoDetail" xml:space="preserve">
+    <value>Order Info Detail</value>
+  </data>
+  <data name="lblOrderNo" xml:space="preserve">
+    <value>Order No</value>
+  </data>
+  <data name="lblOrderSharp" xml:space="preserve">
+    <value>Order#</value>
+  </data>
+  <data name="lblOrderSize" xml:space="preserve">
+    <value>Order Size</value>
+  </data>
+  <data name="lblOrderSource" xml:space="preserve">
+    <value>Order Source</value>
+  </data>
+  <data name="lblOriginQty" xml:space="preserve">
+    <value>Origin Qty</value>
+  </data>
+  <data name="lblPartial" xml:space="preserve">
+    <value>Partial</value>
+  </data>
+  <data name="lblPayDate" xml:space="preserve">
+    <value>PayDate</value>
+  </data>
+  <data name="lblPriceTerm" xml:space="preserve">
+    <value>付款方式</value>
+  </data>
+  <data name="lblProdID" xml:space="preserve">
+    <value>产品</value>
+  </data>
+  <data name="lblProductDESC" xml:space="preserve">
+    <value>产品描述</value>
+  </data>
+  <data name="lblProductName" xml:space="preserve">
+    <value>产品</value>
+  </data>
+  <data name="lblProductPrice" xml:space="preserve">
+    <value>价格</value>
+  </data>
+  <data name="lblProductQty" xml:space="preserve">
+    <value>库存数量</value>
+  </data>
+  <data name="lblProductStyleNum" xml:space="preserve">
+    <value>StyleNum</value>
+  </data>
+  <data name="lblPurchase" xml:space="preserve">
+    <value>购买</value>
+  </data>
+  <data name="lblPurpose" xml:space="preserve">
+    <value>目的</value>
+  </data>
+  <data name="lblRelation" xml:space="preserve">
+    <value>客户关系</value>
+  </data>
+  <data name="lblRelationID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="lblRequestQty" xml:space="preserve">
+    <value>需求数量</value>
+  </data>
+  <data name="lblRetypePassword" xml:space="preserve">
+    <value>请重复输入一次密码</value>
+  </data>
+  <data name="lblRole" xml:space="preserve">
+    <value>角色</value>
+  </data>
+  <data name="lblRoleID" xml:space="preserve">
+    <value>角色ID</value>
+  </data>
+  <data name="lblSalesReport" xml:space="preserve">
+    <value>销售报表</value>
+  </data>
+  <data name="lblSaveItem" xml:space="preserve">
+    <value>Save Item</value>
+  </data>
+  <data name="lblShipMode" xml:space="preserve">
+    <value>Ship Mode</value>
+  </data>
+  <data name="lblShipped" xml:space="preserve">
+    <value>Shipped</value>
+  </data>
+  <data name="lblShipping" xml:space="preserve">
+    <value>Shipping</value>
+  </data>
+  <data name="lblShippingInformation" xml:space="preserve">
+    <value>Shipping Information</value>
+  </data>
+  <data name="lblShowDiffOnly" xml:space="preserve">
+    <value>Show Difference Only</value>
+  </data>
+  <data name="lblSizeDesc" xml:space="preserve">
+    <value>尺寸</value>
+  </data>
+  <data name="lblSizeQty" xml:space="preserve">
+    <value>尺寸数量</value>
+  </data>
+  <data name="lblSizeSeq" xml:space="preserve">
+    <value>SizeSeq</value>
+  </data>
+  <data name="lblSync" xml:space="preserve">
+    <value>同步</value>
+  </data>
+  <data name="lblSYSBeginDate" xml:space="preserve">
+    <value>系统开始使用日期</value>
+  </data>
+  <data name="lblSYSCDate" xml:space="preserve">
+    <value>创建日期</value>
+  </data>
+  <data name="lblSYSContact" xml:space="preserve">
+    <value>联络人</value>
+  </data>
+  <data name="lblSYSContactTel" xml:space="preserve">
+    <value>联络电话</value>
+  </data>
+  <data name="lblSYSExpiryDate" xml:space="preserve">
+    <value>保修到期日期</value>
+  </data>
+  <data name="lblSYSID" xml:space="preserve">
+    <value>公司ID</value>
+  </data>
+  <data name="lblSYSName" xml:space="preserve">
+    <value>公司名字</value>
+  </data>
+  <data name="lblSYSWeb" xml:space="preserve">
+    <value>公司网址</value>
+  </data>
+  <data name="lblToWareHouse" xml:space="preserve">
+    <value>To WareHouse</value>
+  </data>
+  <data name="lblUnitPrice" xml:space="preserve">
+    <value>单价</value>
+  </data>
+  <data name="lblUser" xml:space="preserve">
+    <value>员工</value>
+  </data>
+  <data name="lblUserFullName" xml:space="preserve">
+    <value>员工全名</value>
+  </data>
+  <data name="lblUserID" xml:space="preserve">
+    <value>员工ID</value>
+  </data>
+  <data name="lblUserName" xml:space="preserve">
+    <value>登陆帐号</value>
+  </data>
+  <data name="lblUserRole" xml:space="preserve">
+    <value>员工角色</value>
+  </data>
+  <data name="lblVerified" xml:space="preserve">
+    <value>已确认</value>
+  </data>
+  <data name="lblVerifyDate" xml:space="preserve">
+    <value>确认日期</value>
+  </data>
+  <data name="lblVerifyUser" xml:space="preserve">
+    <value>确认人</value>
+  </data>
+  <data name="lblView" xml:space="preserve">
+    <value>查看</value>
+  </data>
+  <data name="lblWareHouse" xml:space="preserve">
+    <value>仓库</value>
+  </data>
+  <data name="lblWareHouseName" xml:space="preserve">
+    <value>仓库名</value>
+  </data>
+  <data name="lblWarehousePosition" xml:space="preserve">
+    <value>仓库位置</value>
+  </data>
+  <data name="lblYes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="lblYouAreUsing" xml:space="preserve">
+    <value>您正在使用</value>
+  </data>
+  <data name="lblZip" xml:space="preserve">
+    <value>邮编</value>
+  </data>
+  <data name="lblAddAction" xml:space="preserve">
+    <value>增加行动记录</value>
+  </data>
+  <data name="lblCtrlPanel" xml:space="preserve">
+    <value>控制面板</value>
+  </data>
+  <data name="MsgLoginUser" xml:space="preserve">
+    <value>用户ID不能为空</value>
+  </data>
+  <data name="MsgLoginError" xml:space="preserve">
+    <value>登录失败，请检查您的用户名和密码！</value>
+  </data>
+  <data name="lblDepartment" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="lblDepName" xml:space="preserve">
+    <value>部门名称</value>
+  </data>
+  <data name="MsgDepName" xml:space="preserve">
+    <value>部门名字不能为空</value>
+  </data>
+  <data name="lblAddContact" xml:space="preserve">
+    <value>新增联系人</value>
+  </data>
+  <data name="lblMaterial" xml:space="preserve">
+    <value>使用我公司&lt;br&gt;牌号的情况</value>
+  </data>
+  <data name="MsgMaterial" xml:space="preserve">
+    <value>原料牌号不能为空</value>
+  </data>
+  <data name="lblPayMethod" xml:space="preserve">
+    <value>付款方式</value>
+  </data>
+  <data name="lblPurchaseChannels" xml:space="preserve">
+    <value>进货渠道</value>
+  </data>
+  <data name="lblSaleChannels" xml:space="preserve">
+    <value>销售途径</value>
+  </data>
+  <data name="MsgPayMethod" xml:space="preserve">
+    <value>付款方式不能为空</value>
+  </data>
+  <data name="MsgPurchaseChannels" xml:space="preserve">
+    <value>进货渠道不能为空</value>
+  </data>
+  <data name="MsgSaleChannels" xml:space="preserve">
+    <value>销售途径不能为空</value>
+  </data>
+  <data name="lblArrivalPort" xml:space="preserve">
+    <value>接货港口</value>
+  </data>
+  <data name="MsgArrivalPort" xml:space="preserve">
+    <value>接货港口不能为空</value>
+  </data>
+  <data name="lblBidPrice" xml:space="preserve">
+    <value>报价</value>
+  </data>
+  <data name="MsgBidPrice" xml:space="preserve">
+    <value>报价不能为空</value>
+  </data>
+  <data name="lblProdUsage" xml:space="preserve">
+    <value>使用产品信息</value>
+  </data>
+  <data name="lblCustProduct" xml:space="preserve">
+    <value>客户生产产品</value>
+  </data>
+  <data name="lblDealRecords" xml:space="preserve">
+    <value>成交记录</value>
+  </data>
+  <data name="lblTelRecords" xml:space="preserve">
+    <value>电话记录</value>
+  </data>
+  <data name="lblVisitRecords" xml:space="preserve">
+    <value>拜访记录</value>
+  </data>
+  <data name="lblACTNextBuyDate" xml:space="preserve">
+    <value>下次采购日期</value>
+  </data>
+  <data name="lblBidAlready" xml:space="preserve">
+    <value>是否已报价</value>
+  </data>
+  <data name="lblProductCode" xml:space="preserve">
+    <value>产品编号</value>
+  </data>
+  <data name="lblActionTel" xml:space="preserve">
+    <value>电话记录</value>
+  </data>
+  <data name="lblActionVisit" xml:space="preserve">
+    <value>拜访记录</value>
+  </data>
+  <data name="lblModuleRight" xml:space="preserve">
+    <value>模块权限</value>
+  </data>
+  <data name="lblCustomerDeal" xml:space="preserve">
+    <value>成交记录</value>
+  </data>
+  <data name="lblDealDate" xml:space="preserve">
+    <value>合同日期</value>
+  </data>
+  <data name="lblIdle15days" xml:space="preserve">
+    <value>最近15天没联系</value>
+  </data>
+  <data name="lblCancelCnt" xml:space="preserve">
+    <value>违约次数</value>
+  </data>
+  <data name="lblTask" xml:space="preserve">
+    <value>任务</value>
+  </data>
+  <data name="lblTaskDate" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="lblUserCustTransfer" xml:space="preserve">
+    <value>转移客户</value>
+  </data>
+  <data name="lblEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="lblUserCustTransferDesc" xml:space="preserve">
+    <value>把员工的客户转移给别的员工,同时可以选择把该员工删除掉</value>
+  </data>
+  <data name="lblActDesc" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="lblVerUpdate" xml:space="preserve">
+    <value>版本升级</value>
+  </data>
+  <data name="lblStop" xml:space="preserve">
+    <value>停用</value>
+  </data>
+  <data name="MsgEmail" xml:space="preserve">
+    <value>电子邮件不能为空</value>
+  </data>
+  <data name="lblCommissionFactor" xml:space="preserve">
+    <value>客户系数</value>
+  </data>
+  <data name="lblActionBid" xml:space="preserve">
+    <value>报价</value>
+  </data>
+  <data name="lblShipment" xml:space="preserve">
+    <value>合同船期</value>
+  </data>
+  <data name="lblTaskManage" xml:space="preserve">
+    <value>任务管理</value>
+  </data>
+  <data name="lblBirthDay" xml:space="preserve">
+    <value>生日</value>
+  </data>
+  <data name="lblGender" xml:space="preserve">
+    <value>性别</value>
+  </data>
+  <data name="MsgGender" xml:space="preserve">
+    <value>性别不能为空</value>
+  </data>
+  <data name="lblAccessory" xml:space="preserve">
+    <value>是否含税/火车票</value>
+  </data>
+  <data name="lblAirline" xml:space="preserve">
+    <value>航空公司</value>
+  </data>
+  <data name="lblCancellationFee" xml:space="preserve">
+    <value>取消费用</value>
+  </data>
+  <data name="lblChangeFee" xml:space="preserve">
+    <value>改签费用</value>
+  </data>
+  <data name="lblDepAddress" xml:space="preserve">
+    <value>分公司地址</value>
+  </data>
+  <data name="lblDestination" xml:space="preserve">
+    <value>目的国</value>
+  </data>
+  <data name="lblMaxLuggage" xml:space="preserve">
+    <value>最大行李重量</value>
+  </data>
+  <data name="lblPaymentDate" xml:space="preserve">
+    <value>付款日期</value>
+  </data>
+  <data name="MsgAccessory" xml:space="preserve">
+    <value>是否含税/火车票不能为空</value>
+  </data>
+  <data name="MsgAirline" xml:space="preserve">
+    <value>航空公司不能为空</value>
+  </data>
+  <data name="MsgCancellationFee" xml:space="preserve">
+    <value>取消费用不能为空</value>
+  </data>
+  <data name="MsgChangeFee" xml:space="preserve">
+    <value>改签费用不能为空</value>
+  </data>
+  <data name="MsgDepAddress" xml:space="preserve">
+    <value>分公司地址不能为空</value>
+  </data>
+  <data name="MsgDestination" xml:space="preserve">
+    <value>目的国不能为空</value>
+  </data>
+  <data name="MsgInnerReferenceID" xml:space="preserve">
+    <value>内部订单号不能为空</value>
+  </data>
+  <data name="MsgMaxLuggage" xml:space="preserve">
+    <value>最大行李重量不能为空</value>
+  </data>
+  <data name="MsgPaymentDate" xml:space="preserve">
+    <value>付款日期不能为空</value>
+  </data>
+  <data name="lblPDF" xml:space="preserve">
+    <value>导出PDF</value>
+  </data>
+  <data name="lblExcel" xml:space="preserve">
+    <value>导出到Excel</value>
+  </data>
+  <data name="lblRestore" xml:space="preserve">
+    <value>恢复订单</value>
+  </data>
+</root>

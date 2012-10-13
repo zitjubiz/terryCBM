@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Terry.CRM.Web.MasterPage.Site" %>
+
+<%@ Register Src="~/usercontrol/foot.ascx" TagName="foot" TagPrefix="foot" %>
+<%@ Register Src="~/usercontrol/head.ascx" TagName="head" TagPrefix="head" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>CRM</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="all,archive" name="robots" />
+    <meta name="author" content="Terry Zhang" />
+    <meta name="Copyright" content="2simplework.com" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../css/jquery.alerts.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../css/jquery.treeTable.css" rel="stylesheet" type="text/css" />
+    <link href="../css/jquery.autocomplete.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../css/lightBlue.css" rel="stylesheet" type="text/css" />
+    <link href="../css/subModal.css" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+    <style type="text/css" media="screen">
+     .menu ul li {float: left; width: 100%;}
+    </style>
+    <![endif]-->
+    <!--[if lt IE 7]>
+
+    <style type="text/css" media="screen">
+    body {
+    behavior: url(csshover3.htc);
+    font-size: 100%;
+    }
+
+    .menu ul li a {height: 1%;} 
+
+    .menu a, #menu h2 {
+    font: bold 0.9em/1.4em arial, helvetica, sans-serif;
+    }
+    </style>
+    <![endif]-->
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="SM1" runat="server" EnablePageMethods="true" EnablePartialRendering="true">
+        <Scripts>
+            <asp:ScriptReference Path="~/Js/datepicker/WdatePicker.js" />
+            <asp:ScriptReference Path="~/Js/checkform.js" />
+            <asp:ScriptReference Path="~/Js/jquery-1.3.2.min.js" />
+            <asp:ScriptReference Path="~/Js/jquery.alerts.js" />
+            <asp:ScriptReference Path="~/Js/jquery.autocomplete.js" />
+            <asp:ScriptReference Path="~/Js/jquery.messager.js" />
+            <asp:ScriptReference Path="~/Js/jquery.maxlength.js" />
+            <asp:ScriptReference Path="~/Js/common.js" />
+            <asp:ScriptReference Path="~/Js/doPostBack.js" />
+            <asp:ScriptReference Path="~/Js/Enter2Tab.js" />
+            <asp:ScriptReference Path="~/Js/subModal.js" />
+<%--            <asp:ScriptReference Path="~/Js/ZeroClipboard/ZeroClipboard.js" />--%>
+        </Scripts>
+    </asp:ScriptManager>
+
+    <script type="text/javascript">
+			
+			$(document).ready(function()
+			    {
+			    
+                    $("textarea").each(
+                        function(){
+                        }
+                    );
+
+                    
+				    if($("#ctl00_lblJScript").length!=0 && $("#ctl00_lblJScript").text()!="")
+				    {
+				    	if( $.browser.msie && parseInt($.browser.version) <= 6 )
+                            hiddenselect();
+					    jAlert($("#ctl00_lblJScript").text(), '信息',showselect);
+			        }
+			    }
+			);
+			
+			function hiddenselect()
+            {   
+                var f = document.forms[0];
+                if (f)
+                {
+                    for (i=0;i<f.elements.length;i++)
+                    {
+                        if (f.elements[i].type=="select-one")
+                            f.elements[i].style.display="none";
+                    }
+                }
+            }
+ 
+            function showselect()
+            {
+                var f = document.forms[0];
+                if (f)
+                {
+                    for (i=0;i<f.elements.length;i++)
+                    {
+                        if (f.elements[i].type=="select-one")
+                            f.elements[i].style.display="";
+                    }
+               }
+            } 
+			
+    </script>
+
+    <asp:HiddenField ID="hidSearch" runat="server" Value="<%$ Resources:re, MsgSearch%>" />
+    <head:head ID="head1" runat="server" />
+    <asp:ContentPlaceHolder ID="CPH1" runat="server">
+    </asp:ContentPlaceHolder>
+    <foot:foot ID="foot1" runat="server" />
+    </form>
+    <!-- IE Exception: unable to modify the parent container element --->
+    <asp:Label runat="server" ID="lblJScript" Style="display: none;"></asp:Label>
+</body>
+</html>

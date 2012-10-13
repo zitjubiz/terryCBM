@@ -1,0 +1,1912 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblBack" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="lblBaseInfo" xml:space="preserve">
+    <value>Basic Info</value>
+  </data>
+  <data name="lblCompany" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="lblCompanyName" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="lblContractNum" xml:space="preserve">
+    <value>Contract Num</value>
+  </data>
+  <data name="lblCopy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="lblCurrencyCode" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="lblCustomer" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="lblCustomerName" xml:space="preserve">
+    <value>Customer Name</value>
+  </data>
+  <data name="lblDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="lblEdit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="lblFactory" xml:space="preserve">
+    <value>Factory</value>
+  </data>
+  <data name="lblFactoryName" xml:space="preserve">
+    <value>Factory Name</value>
+  </data>
+  <data name="lblHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="lblID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="lblModifyDate" xml:space="preserve">
+    <value>ModifyDate</value>
+  </data>
+  <data name="lblModifyUser" xml:space="preserve">
+    <value>ModifyUser</value>
+  </data>
+  <data name="lblNew" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="lblPrice" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="lblProduct" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="lblQty" xml:space="preserve">
+    <value>Qty</value>
+  </data>
+  <data name="lblRecords" xml:space="preserve">
+    <value>Records</value>
+  </data>
+  <data name="lblRemark" xml:space="preserve">
+    <value>Remark</value>
+  </data>
+  <data name="lblSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="lblSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="lblShipMode" xml:space="preserve">
+    <value>Ship Mode</value>
+  </data>
+  <data name="lblSizeDesc" xml:space="preserve">
+    <value>SizeDesc</value>
+  </data>
+  <data name="lblTotalRecords" xml:space="preserve">
+    <value>Total Records</value>
+  </data>
+  <data name="lblVerifyDate" xml:space="preserve">
+    <value>Confirm Date</value>
+  </data>
+  <data name="lblVerifyUser" xml:space="preserve">
+    <value>Confirm User</value>
+  </data>
+  <data name="lblWareHouse" xml:space="preserve">
+    <value>WareHouse</value>
+  </data>
+  <data name="lblWareHouseName" xml:space="preserve">
+    <value>WareHouseName</value>
+  </data>
+  <data name="lblYouAreUsing" xml:space="preserve">
+    <value>You are using</value>
+  </data>
+  <data name="MsgCompanyName" xml:space="preserve">
+    <value>Company Name must not be blank.</value>
+  </data>
+  <data name="MsgFactoryName" xml:space="preserve">
+    <value>Factory Name must not be blank.</value>
+  </data>
+  <data name="MsgID" xml:space="preserve">
+    <value>ID is required</value>
+  </data>
+  <data name="MsgModifyUser" xml:space="preserve">
+    <value>ModifyUser is required</value>
+  </data>
+  <data name="MsgVerifyUser" xml:space="preserve">
+    <value>Confirm User is required</value>
+  </data>
+  <data name="MsgWareHouseName" xml:space="preserve">
+    <value>WareHouse Name is required</value>
+  </data>
+  <data name="lblDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lblGINID" xml:space="preserve">
+    <value>GINID</value>
+  </data>
+  <data name="lblGONID" xml:space="preserve">
+    <value>GONID</value>
+  </data>
+  <data name="lblLotNo" xml:space="preserve">
+    <value>LotNo</value>
+  </data>
+  <data name="lblOrderDate" xml:space="preserve">
+    <value>Order Date</value>
+  </data>
+  <data name="lblOrderInfo" xml:space="preserve">
+    <value>Order Info</value>
+  </data>
+  <data name="lblOrderInfoDetail" xml:space="preserve">
+    <value>Order Info Detail</value>
+  </data>
+  <data name="lblOrderNo" xml:space="preserve">
+    <value>Order No</value>
+  </data>
+  <data name="lblPayDate" xml:space="preserve">
+    <value>PayDate</value>
+  </data>
+  <data name="lblPriceTerm" xml:space="preserve">
+    <value>Price Term</value>
+  </data>
+  <data name="lblPurpose" xml:space="preserve">
+    <value>Purpose</value>
+  </data>
+  <data name="MsgCompany" xml:space="preserve">
+    <value>Company must not be blank.</value>
+  </data>
+  <data name="MsgCustomer" xml:space="preserve">
+    <value>Customer must not be blank.</value>
+  </data>
+  <data name="MsgDescription" xml:space="preserve">
+    <value>Description must not be blank and less than 255 characters.</value>
+  </data>
+  <data name="MsgFactory" xml:space="preserve">
+    <value>Factory must not be blank.</value>
+  </data>
+  <data name="MsgGINID" xml:space="preserve">
+    <value>GIN ID must not be blank.</value>
+  </data>
+  <data name="MsgGONID" xml:space="preserve">
+    <value>GON ID must not be blank.</value>
+  </data>
+  <data name="MsgGRNID" xml:space="preserve">
+    <value>GRN ID must not be blank.</value>
+  </data>
+  <data name="MsgOrderDate" xml:space="preserve">
+    <value>OrderDate must not be blank.</value>
+  </data>
+  <data name="MsgOrderID" xml:space="preserve">
+    <value>Order ID must not be blank.</value>
+  </data>
+  <data name="MsgPayDate" xml:space="preserve">
+    <value>PayDate must not be blank.</value>
+  </data>
+  <data name="MsgPriceTerm" xml:space="preserve">
+    <value>PriceTerm must not be blank.</value>
+  </data>
+  <data name="MsgRemark" xml:space="preserve">
+    <value>Remark must be less than 255 characters.</value>
+  </data>
+  <data name="MsgWarehouse" xml:space="preserve">
+    <value>Warehouse is required</value>
+  </data>
+  <data name="lblEnglish" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="lblLoginUser" xml:space="preserve">
+    <value>User ID</value>
+  </data>
+  <data name="lblPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="lblSimpChinese" xml:space="preserve">
+    <value>简体中文</value>
+  </data>
+  <data name="lblTradChinese" xml:space="preserve">
+    <value>繁體中文</value>
+  </data>
+  <data name="lblExpiryDate" xml:space="preserve">
+    <value>Expiry Date</value>
+  </data>
+  <data name="lblUnitPrice" xml:space="preserve">
+    <value>Unit Price</value>
+  </data>
+  <data name="lblWarehousePosition" xml:space="preserve">
+    <value>Warehouse Position</value>
+  </data>
+  <data name="lblLanguage" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="MsgLoginError" xml:space="preserve">
+    <value>Login fail! Please check your username and password</value>
+  </data>
+  <data name="MsgLoginUser" xml:space="preserve">
+    <value>User ID must not be blank</value>
+  </data>
+  <data name="MsgPassword" xml:space="preserve">
+    <value>Password is required</value>
+  </data>
+  <data name="lblGON" xml:space="preserve">
+    <value>Goods Out Note</value>
+  </data>
+  <data name="lblIsVerify" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="lblPLID" xml:space="preserve">
+    <value>PLID</value>
+  </data>
+  <data name="MsgPLID" xml:space="preserve">
+    <value>PLID must not be blank.</value>
+  </data>
+  <data name="MsgPurpose" xml:space="preserve">
+    <value>Purpose must not be blank.</value>
+  </data>
+  <data name="lblGoods" xml:space="preserve">
+    <value>Goods</value>
+  </data>
+  <data name="lblUser" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="lblUserName" xml:space="preserve">
+    <value>UserName</value>
+  </data>
+  <data name="MsgGoodsName" xml:space="preserve">
+    <value>Goods Name must not be blank.</value>
+  </data>
+  <data name="MsgUserName" xml:space="preserve">
+    <value>UserName is required</value>
+  </data>
+  <data name="MsgDeleteFail" xml:space="preserve">
+    <value>Delete Fail</value>
+  </data>
+  <data name="MsgDeleteOK" xml:space="preserve">
+    <value>Delete Successfully</value>
+  </data>
+  <data name="MsgSaveFail" xml:space="preserve">
+    <value>Save Fail</value>
+  </data>
+  <data name="MsgSaveOK" xml:space="preserve">
+    <value>Save Successfully</value>
+  </data>
+  <data name="MsgCheck" xml:space="preserve">
+    <value>Please check.</value>
+  </data>
+  <data name="MsgComfigAdd" xml:space="preserve">
+    <value>Save Successfully.go on?</value>
+  </data>
+  <data name="MsgNoteTip" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="MsgSaveConfirm" xml:space="preserve">
+    <value>Are you sure to save?</value>
+  </data>
+  <data name="DDLAll" xml:space="preserve">
+    <value>ALL</value>
+  </data>
+  <data name="DDLSelected" xml:space="preserve">
+    <value>---Select---</value>
+  </data>
+  <data name="lblIsCancel" xml:space="preserve">
+    <value>IsCancel</value>
+  </data>
+  <data name="lblIsComplete" xml:space="preserve">
+    <value>IsComplete</value>
+  </data>
+  <data name="DateFormatString" xml:space="preserve">
+    <value>{0:yyyy-MM-dd}</value>
+    <comment>GridView 时间列的DataformatString</comment>
+  </data>
+  <data name="MsgCurrencyCode" xml:space="preserve">
+    <value>Currency Code must not be blank.</value>
+  </data>
+  <data name="MsgShipMode" xml:space="preserve">
+    <value>Ship Mode is required</value>
+  </data>
+  <data name="MsgDeleteConfirm" xml:space="preserve">
+    <value>Are you sure to delete?</value>
+  </data>
+  <data name="MsgCannotDelete" xml:space="preserve">
+    <value>Can't delete, some data relate with it</value>
+  </data>
+  <data name="lblProdcuctSupplier" xml:space="preserve">
+    <value>Supplier</value>
+  </data>
+  <data name="lblProductDESC" xml:space="preserve">
+    <value>Product Desc</value>
+  </data>
+  <data name="lblProductName" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="lblProductPrice" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="lblProductQty" xml:space="preserve">
+    <value>Qty In Stock</value>
+  </data>
+  <data name="lblProductStyleNum" xml:space="preserve">
+    <value>StyleNum</value>
+  </data>
+  <data name="lblItemID" xml:space="preserve">
+    <value>ItemID</value>
+  </data>
+  <data name="lblNewItem" xml:space="preserve">
+    <value>New Item</value>
+  </data>
+  <data name="lblSaveItem" xml:space="preserve">
+    <value>Save Item</value>
+  </data>
+  <data name="MsgItemID" xml:space="preserve">
+    <value>ItemID must not be blank.</value>
+  </data>
+  <data name="MsgProduct" xml:space="preserve">
+    <value>Product is required</value>
+  </data>
+  <data name="MsgQty" xml:space="preserve">
+    <value>Qty must be a positive integer.</value>
+  </data>
+  <data name="MsgUnitPrice" xml:space="preserve">
+    <value>UnitPrice must be a positive integer or float.</value>
+  </data>
+  <data name="MsgCustomerName" xml:space="preserve">
+    <value>Customer Name must not be blank.</value>
+  </data>
+  <data name="MsgModifyDate" xml:space="preserve">
+    <value>ModifyDate is required</value>
+  </data>
+  <data name="MsgVerifyDate" xml:space="preserve">
+    <value>Confirm Date is required</value>
+  </data>
+  <data name="lblOrderSize" xml:space="preserve">
+    <value>Order Size</value>
+  </data>
+  <data name="lblSizeQty" xml:space="preserve">
+    <value>SizeQty</value>
+  </data>
+  <data name="lblSizeSeq" xml:space="preserve">
+    <value>SizeSeq</value>
+  </data>
+  <data name="MsgSizeDesc" xml:space="preserve">
+    <value>SizeDesc is required</value>
+  </data>
+  <data name="MsgSizeQty" xml:space="preserve">
+    <value>SizeQty must be a positive integer.</value>
+  </data>
+  <data name="MsgSizeSeq" xml:space="preserve">
+    <value>SizeSeq must be Integer.</value>
+  </data>
+  <data name="lblSync" xml:space="preserve">
+    <value>Sync</value>
+  </data>
+  <data name="lblCurrency" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="lblRegion" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="MsgSyncOK" xml:space="preserve">
+    <value>Products' synchronization finish</value>
+  </data>
+  <data name="lblSystem" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="lblRole" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="MsgRole" xml:space="preserve">
+    <value>Role is required</value>
+  </data>
+  <data name="MsgCannotDeleteOrder" xml:space="preserve">
+    <value>Can't delete, order's status is Verify or Complete</value>
+  </data>
+  <data name="MsgCannotDeletePickList" xml:space="preserve">
+    <value>Can't delete, Picking List's status is Verify</value>
+  </data>
+  <data name="DateFormatStringCS" xml:space="preserve">
+    <value>yyyy-MM-dd</value>
+    <comment>.cs所用 DataformatString</comment>
+  </data>
+  <data name="lblOrder" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="lblOrderID" xml:space="preserve">
+    <value>Order ID</value>
+  </data>
+  <data name="lblPurchase" xml:space="preserve">
+    <value>Purchase</value>
+  </data>
+  <data name="MsgSessionTimeOut" xml:space="preserve">
+    <value>Session Timeout! pleae login again</value>
+  </data>
+  <data name="MsgSplitOrderOrAddContract" xml:space="preserve">
+    <value>Products in order have not enough qty in stocks,Please prompt user to split order or add contract with factory</value>
+  </data>
+  <data name="lblDeliveryNote" xml:space="preserve">
+    <value>Delivery Note</value>
+  </data>
+  <data name="lblDocument" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="lblInvoice" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="lblBrand" xml:space="preserve">
+    <value>Brands selling</value>
+  </data>
+  <data name="MsgBrandName" xml:space="preserve">
+    <value>Brands must not be blank,otherwise you can't get product info via central database</value>
+  </data>
+  <data name="lblAddress" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="lblContactMan" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="lblPhone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="lblZip" xml:space="preserve">
+    <value>Zip</value>
+  </data>
+  <data name="MsgAddress" xml:space="preserve">
+    <value>Address must not be blank and less than 255 characters.</value>
+  </data>
+  <data name="MsgContactMan" xml:space="preserve">
+    <value>Contact Man must not be blank.</value>
+  </data>
+  <data name="MsgNoSizeItem" xml:space="preserve">
+    <value>Order Size is empty,please check.</value>
+  </data>
+  <data name="MsgPhone" xml:space="preserve">
+    <value>Phone must not be blank.</value>
+  </data>
+  <data name="MsgZip" xml:space="preserve">
+    <value>Zip must be digit.</value>
+  </data>
+  <data name="MsgQtyOutOfRange" xml:space="preserve">
+    <value>Qty out of range.</value>
+  </data>
+  <data name="MsgNote" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="DateTimeFormatStringCS" xml:space="preserve">
+    <value>yyyy-MM-dd HH:mm:ss</value>
+    <comment>CS文件的DateTime显示格式</comment>
+  </data>
+  <data name="MsgExistProduct" xml:space="preserve">
+    <value>The product already exists!</value>
+  </data>
+  <data name="MsgAccessDeny" xml:space="preserve">
+    <value>Access Deny</value>
+  </data>
+  <data name="MsgLotNo" xml:space="preserve">
+    <value>LotNo must not be blank.</value>
+  </data>
+  <data name="MsgExpiryDate" xml:space="preserve">
+    <value>ExpiryDate Name must not be blank.</value>
+  </data>
+  <data name="MsgWarehousePosition" xml:space="preserve">
+    <value>WareHouse Position is required</value>
+  </data>
+  <data name="MsgDuplicate" xml:space="preserve">
+    <value>Duplicate ID</value>
+  </data>
+  <data name="lblClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="MsgQtyMustBe" xml:space="preserve">
+    <value>Total Qty must be : </value>
+  </data>
+  <data name="MsgQtyNoEqual" xml:space="preserve">
+    <value>Item Qty and Size Total Qty must be equal.</value>
+  </data>
+  <data name="MsgSearch" xml:space="preserve">
+    <value>Please input search condition.</value>
+  </data>
+  <data name="lblChangePassword" xml:space="preserve">
+    <value>Cange password</value>
+  </data>
+  <data name="lblNewPassword" xml:space="preserve">
+    <value>New password</value>
+  </data>
+  <data name="lblOldPassword" xml:space="preserve">
+    <value>Old password</value>
+  </data>
+  <data name="lblRetypePassword" xml:space="preserve">
+    <value>Please re-type your password</value>
+  </data>
+  <data name="lblStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="MsgRetypePassword" xml:space="preserve">
+    <value>New passwords you input must be same</value>
+  </data>
+  <data name="MsgChangePwdFail" xml:space="preserve">
+    <value>Change password fail! please check your old password.</value>
+  </data>
+  <data name="lblCompleted" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="lblTotalAmount" xml:space="preserve">
+    <value>TotalAmount</value>
+  </data>
+  <data name="lblTotalQty" xml:space="preserve">
+    <value>TotalQty</value>
+  </data>
+  <data name="lblVerified" xml:space="preserve">
+    <value>Confirmed</value>
+  </data>
+  <data name="lblNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="lblYes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="MsgCannotDelVerify" xml:space="preserve">
+    <value>Can't delete, status is Verify or Complete</value>
+  </data>
+  <data name="MsgCannotDeleteOrderByCancel" xml:space="preserve">
+    <value>Can't delete, order's status is Cancelled</value>
+  </data>
+  <data name="MsgGContract" xml:space="preserve">
+    <value>Purchase Order must not be blank.</value>
+  </data>
+  <data name="MsgOrder" xml:space="preserve">
+    <value>Order must not be blank.</value>
+  </data>
+  <data name="lblView" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="lblFromWareHouse" xml:space="preserve">
+    <value>Form WareHouse</value>
+  </data>
+  <data name="lblToWareHouse" xml:space="preserve">
+    <value>To WareHouse</value>
+  </data>
+  <data name="MsgFromWareHouse" xml:space="preserve">
+    <value>FormWareHouse must not be blank.</value>
+  </data>
+  <data name="MsgToWareHouse" xml:space="preserve">
+    <value>ToWareHouse is required</value>
+  </data>
+  <data name="MsgCopyOK" xml:space="preserve">
+    <value>Copy  Successfully</value>
+  </data>
+  <data name="MsgNotExistProductOrQtyOutOfRange" xml:space="preserve">
+    <value>The order do not exist this product or qty out of range.Please check.</value>
+  </data>
+  <data name="MsgOrderItemEmpty" xml:space="preserve">
+    <value>Order Items is Empty,Please check.</value>
+  </data>
+  <data name="MsgGoodsInQty" xml:space="preserve">
+    <value>Goods In Qty must be not larger than Order/Contract's Qty, and must be larger than zero.</value>
+  </data>
+  <data name="MsgNotEnoughQty1" xml:space="preserve">
+    <value>1. Change the order Qty.</value>
+  </data>
+  <data name="MsgNotEnoughQty2" xml:space="preserve">
+    <value>2. Transfer goods from other warehouses</value>
+  </data>
+  <data name="MsgNotEnoughQty3" xml:space="preserve">
+    <value>3. Ignore and continue to confirm</value>
+  </data>
+  <data name="MsgNotEnoughQtyTitle" xml:space="preserve">
+    <value>Products in order have not enough qty in stocks,Please select :</value>
+  </data>
+  <data name="MsgUploadSuccess" xml:space="preserve">
+    <value>Upload Success!</value>
+  </data>
+  <data name="MsgCannibalizeQty" xml:space="preserve">
+    <value>Stock Transfer Qty must less than the active Qty</value>
+  </data>
+  <data name="CreateNewPickList" xml:space="preserve">
+    <value>And a new PickingList has been created automatically.Because the PickingList Qty is less than the Order Qty.</value>
+  </data>
+  <data name="lblActualQty" xml:space="preserve">
+    <value>Actual Qty</value>
+  </data>
+  <data name="lblConfirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="lblConfirmed" xml:space="preserve">
+    <value>Confirmed</value>
+  </data>
+  <data name="lblRequestQty" xml:space="preserve">
+    <value>Request Qty</value>
+  </data>
+  <data name="MsgConfirmOK" xml:space="preserve">
+    <value>Confirm Successfully</value>
+  </data>
+  <data name="lblCancelled" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="MsgConfirm" xml:space="preserve">
+    <value>Confirm Successfully.</value>
+  </data>
+  <data name="MsgConfirmTip" xml:space="preserve">
+    <value>Comfirm has been done.</value>
+  </data>
+  <data name="lblCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="MsgUnConfirmOK" xml:space="preserve">
+    <value>UnConfirm Successfully.</value>
+  </data>
+  <data name="lblCargoIn" xml:space="preserve">
+    <value>GoodsIn</value>
+  </data>
+  <data name="MsgCancelOK" xml:space="preserve">
+    <value>Cancel Successfully</value>
+  </data>
+  <data name="MsgUnCancelOK" xml:space="preserve">
+    <value>UnCancel Successfully</value>
+  </data>
+  <data name="MsgUnConfirm" xml:space="preserve">
+    <value>UnConfirm successfully.</value>
+  </data>
+  <data name="lblLogistics" xml:space="preserve">
+    <value>Logistics</value>
+  </data>
+  <data name="lblLogisticsAccount" xml:space="preserve">
+    <value>Logistics Account</value>
+  </data>
+  <data name="lblLogisticsName" xml:space="preserve">
+    <value>Logistics Name</value>
+  </data>
+  <data name="MsgLogisticsAccount" xml:space="preserve">
+    <value>Logistics Account must not be blank</value>
+  </data>
+  <data name="MsgLogisticsName" xml:space="preserve">
+    <value>Logistics Name must not be blank</value>
+  </data>
+  <data name="lblShipping" xml:space="preserve">
+    <value>Shipping</value>
+  </data>
+  <data name="MsgLogistics" xml:space="preserve">
+    <value>Logistics must not be blank</value>
+  </data>
+  <data name="MsgPickingList" xml:space="preserve">
+    <value>PickingList must not be blank</value>
+  </data>
+  <data name="lblLogisticsFee" xml:space="preserve">
+    <value>Logisitics Fee</value>
+  </data>
+  <data name="lblLogisticsNo" xml:space="preserve">
+    <value>Logistics No.</value>
+  </data>
+  <data name="lblBillingInformation" xml:space="preserve">
+    <value>Billing Information</value>
+  </data>
+  <data name="lblCreateDate" xml:space="preserve">
+    <value>Create date</value>
+  </data>
+  <data name="lblOrderSource" xml:space="preserve">
+    <value>Order Source</value>
+  </data>
+  <data name="lblPartial" xml:space="preserve">
+    <value>Partial</value>
+  </data>
+  <data name="lblShipped" xml:space="preserve">
+    <value>Shipped</value>
+  </data>
+  <data name="lblShippingInformation" xml:space="preserve">
+    <value>Shipping Information</value>
+  </data>
+  <data name="MsgBillAddress" xml:space="preserve">
+    <value>Bill Address must not be blank and less than 255 characters.</value>
+  </data>
+  <data name="MsgBillContactMan" xml:space="preserve">
+    <value>Bill Contact Man must not be blank.</value>
+  </data>
+  <data name="MsgBillPhone" xml:space="preserve">
+    <value>Bill Phone must not be blank.</value>
+  </data>
+  <data name="MsgBillZip" xml:space="preserve">
+    <value>Bill Zip must be digit.</value>
+  </data>
+  <data name="MsgPickedBy" xml:space="preserve">
+    <value>PickedBy must not be blank.</value>
+  </data>
+  <data name="MsgPickedDate" xml:space="preserve">
+    <value>Picked Date must not be blank.</value>
+  </data>
+  <data name="lblCurrentQty" xml:space="preserve">
+    <value>Current Qty</value>
+  </data>
+  <data name="lblDiffQty" xml:space="preserve">
+    <value>Diff Qty</value>
+  </data>
+  <data name="lblOriginQty" xml:space="preserve">
+    <value>Origin Qty</value>
+  </data>
+  <data name="lblBeginDate" xml:space="preserve">
+    <value>BeginDate</value>
+  </data>
+  <data name="lblBestSalesReport" xml:space="preserve">
+    <value>Best sales of product</value>
+  </data>
+  <data name="lblBlank" xml:space="preserve">
+    <value>Blank</value>
+  </data>
+  <data name="lblContractReport" xml:space="preserve">
+    <value>Contract Report</value>
+  </data>
+  <data name="lblDisPlay" xml:space="preserve">
+    <value>DisPlay</value>
+  </data>
+  <data name="lblEndDate" xml:space="preserve">
+    <value>EndDate</value>
+  </data>
+  <data name="lblExport" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="lblReport" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="lblSalesReport" xml:space="preserve">
+    <value>SalesReport</value>
+  </data>
+  <data name="lblShowDiffOnly" xml:space="preserve">
+    <value>Show Difference Only</value>
+  </data>
+  <data name="lblExportDiff" xml:space="preserve">
+    <value>Export the different items and check again</value>
+  </data>
+  <data name="lblNoneRecord" xml:space="preserve">
+    <value>None Records</value>
+  </data>
+  <data name="lblCostProfitReport" xml:space="preserve">
+    <value>Cost Profit Report</value>
+  </data>
+  <data name="MsgFee" xml:space="preserve">
+    <value>Fee must be a positive integer or float.</value>
+  </data>
+  <data name="MsgLogisticsNo" xml:space="preserve">
+    <value>Logistics No must not be blank.</value>
+  </data>
+  <data name="lblPrintDeliveryNote" xml:space="preserve">
+    <value>Print Delivery Note</value>
+  </data>
+  <data name="lblPrintInvoice" xml:space="preserve">
+    <value>Print Invoice</value>
+  </data>
+  <data name="MsgInventoryCheck" xml:space="preserve">
+    <value>You must upload stock-take list before confirm</value>
+  </data>
+  <data name="lblName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="lblTotalPrice" xml:space="preserve">
+    <value>TotalPrice</value>
+  </data>
+  <data name="MsgPrice" xml:space="preserve">
+    <value>Price must be a positive integer or float.</value>
+  </data>
+  <data name="lblAmount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="lblOrderSharp" xml:space="preserve">
+    <value>Order#</value>
+  </data>
+  <data name="lblBillType" xml:space="preserve">
+    <value>BillType</value>
+  </data>
+  <data name="MsgCanNotCopy" xml:space="preserve">
+    <value>Can not copy.</value>
+  </data>
+  <data name="lblOpportunity" xml:space="preserve">
+    <value>Opportunity</value>
+  </data>
+  <data name="lblSchedule" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="lblFooter" xml:space="preserve">
+    <value>Please use IE7+, Firefox etc. W3c browser &amp;nbsp; &amp;nbsp;
+Customer Relationship Management &amp;copy;2011</value>
+  </data>
+  <data name="lblHelp" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="lblLogout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="lblCustomerCode" xml:space="preserve">
+    <value>Customer Code</value>
+  </data>
+  <data name="lblCustomerType" xml:space="preserve">
+    <value>CustomerType</value>
+  </data>
+  <data name="lblCustomerFax" xml:space="preserve">
+    <value>Customer Fax</value>
+  </data>
+  <data name="lblCustomerTel" xml:space="preserve">
+    <value>Customer Tel</value>
+  </data>
+  <data name="lblSYSID" xml:space="preserve">
+    <value>SYSID</value>
+  </data>
+  <data name="lblSYSName" xml:space="preserve">
+    <value>SYSName</value>
+  </data>
+  <data name="lblSYSWeb" xml:space="preserve">
+    <value>SYSWeb</value>
+  </data>
+  <data name="lblSYSContact" xml:space="preserve">
+    <value>SYSContact</value>
+  </data>
+  <data name="lblSYSContactTel" xml:space="preserve">
+    <value>SYSContactTel</value>
+  </data>
+  <data name="lblSYSCDate" xml:space="preserve">
+    <value>SYSCDate</value>
+  </data>
+  <data name="lblSYSBeginDate" xml:space="preserve">
+    <value>SYSBeginDate</value>
+  </data>
+  <data name="lblSYSExpiryDate" xml:space="preserve">
+    <value>SYSExpiryDate</value>
+  </data>
+  <data name="lblContactID" xml:space="preserve">
+    <value>ContactID</value>
+  </data>
+  <data name="lblContactName" xml:space="preserve">
+    <value>ContactName</value>
+  </data>
+  <data name="lblContactSex" xml:space="preserve">
+    <value>ContactSex</value>
+  </data>
+  <data name="lblContactTypeID" xml:space="preserve">
+    <value>ContactTypeID</value>
+  </data>
+  <data name="lblContactDept" xml:space="preserve">
+    <value>ContactDept</value>
+  </data>
+  <data name="lblContactTitle" xml:space="preserve">
+    <value>ContactTitle</value>
+  </data>
+  <data name="lblContactTel" xml:space="preserve">
+    <value>ContactTel</value>
+  </data>
+  <data name="lblContactMobile" xml:space="preserve">
+    <value>ContactMobile</value>
+  </data>
+  <data name="lblContactEmail" xml:space="preserve">
+    <value>ContactEmail</value>
+  </data>
+  <data name="lblContactMSN" xml:space="preserve">
+    <value>ContactMSN</value>
+  </data>
+  <data name="lblContactQQ" xml:space="preserve">
+    <value>ContactQQ</value>
+  </data>
+  <data name="lblContactFax" xml:space="preserve">
+    <value>ContactFax</value>
+  </data>
+  <data name="lblContactCustID" xml:space="preserve">
+    <value>ContactCustID</value>
+  </data>
+  <data name="lblContact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="lblCustTypeID" xml:space="preserve">
+    <value>CustTypeID</value>
+  </data>
+  <data name="lblCustType" xml:space="preserve">
+    <value>CustType</value>
+  </data>
+  <data name="lblIndustryID" xml:space="preserve">
+    <value>IndustryID</value>
+  </data>
+  <data name="lblIndustry" xml:space="preserve">
+    <value>Industry</value>
+  </data>
+  <data name="lblCustomerIndustry" xml:space="preserve">
+    <value>CustomerIndustry</value>
+  </data>
+  <data name="lblRelationID" xml:space="preserve">
+    <value>RelationID</value>
+  </data>
+  <data name="lblRelation" xml:space="preserve">
+    <value>Relation</value>
+  </data>
+  <data name="lblCustomerRelation" xml:space="preserve">
+    <value>Customer Grade</value>
+  </data>
+  <data name="lblEmpNum" xml:space="preserve">
+    <value>EmpNum</value>
+  </data>
+  <data name="lblCustomerEmpNum" xml:space="preserve">
+    <value>CustomerEmpNum</value>
+  </data>
+  <data name="lblCustFrom" xml:space="preserve">
+    <value>CustFrom</value>
+  </data>
+  <data name="lblCustomerFrom" xml:space="preserve">
+    <value>CustomerFrom</value>
+  </data>
+  <data name="lblCustStatus" xml:space="preserve">
+    <value>CustStatus</value>
+  </data>
+  <data name="lblCustomerStatus" xml:space="preserve">
+    <value>CustomerStatus</value>
+  </data>
+  <data name="lblCountryID" xml:space="preserve">
+    <value>CountryID</value>
+  </data>
+  <data name="lblCountry" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="lblContactType" xml:space="preserve">
+    <value>ContactType</value>
+  </data>
+  <data name="lblOPPPhase" xml:space="preserve">
+    <value>OPPPhase</value>
+  </data>
+  <data name="lblOpportunityPhase" xml:space="preserve">
+    <value>OpportunityPhase</value>
+  </data>
+  <data name="lblOPPStatus" xml:space="preserve">
+    <value>OPPStatus</value>
+  </data>
+  <data name="lblOpportunityStatus" xml:space="preserve">
+    <value>OpportunityStatus</value>
+  </data>
+  <data name="lblACTID" xml:space="preserve">
+    <value>ACTID</value>
+  </data>
+  <data name="lblACTUser" xml:space="preserve">
+    <value>ACTUser</value>
+  </data>
+  <data name="lblActionUsers" xml:space="preserve">
+    <value>ActionUsers</value>
+  </data>
+  <data name="lblOPPID" xml:space="preserve">
+    <value>OPPID</value>
+  </data>
+  <data name="lblOPPCustID" xml:space="preserve">
+    <value>OPPCustID</value>
+  </data>
+  <data name="lblOPPRequest" xml:space="preserve">
+    <value>OPPRequest</value>
+  </data>
+  <data name="lblOPPOwner" xml:space="preserve">
+    <value>OPPOwner</value>
+  </data>
+  <data name="lblOPPFromID" xml:space="preserve">
+    <value>OPPFromID</value>
+  </data>
+  <data name="lblOPPExpectDate" xml:space="preserve">
+    <value>OPPExpectDate</value>
+  </data>
+  <data name="lblOPPExpectAmount" xml:space="preserve">
+    <value>OPPExpectAmount</value>
+  </data>
+  <data name="lblOPPPhaseID" xml:space="preserve">
+    <value>OPPPhaseID</value>
+  </data>
+  <data name="lblOPPProbability" xml:space="preserve">
+    <value>OPPProbability</value>
+  </data>
+  <data name="lblOPPStatusID" xml:space="preserve">
+    <value>OPPStatusID</value>
+  </data>
+  <data name="lblOPPRemark" xml:space="preserve">
+    <value>OPPRemark</value>
+  </data>
+  <data name="lblOPPCDate" xml:space="preserve">
+    <value>OPPCDate</value>
+  </data>
+  <data name="lblOPPCUser" xml:space="preserve">
+    <value>OPPCUser</value>
+  </data>
+  <data name="lblOPPModifyDate" xml:space="preserve">
+    <value>OPPModifyDate</value>
+  </data>
+  <data name="lblOPPModifyUser" xml:space="preserve">
+    <value>OPPModifyUser</value>
+  </data>
+  <data name="lblACTSubject" xml:space="preserve">
+    <value>ACTSubject</value>
+  </data>
+  <data name="lblACTType" xml:space="preserve">
+    <value>ACTType</value>
+  </data>
+  <data name="lblACTBeginDate" xml:space="preserve">
+    <value>ACTBeginDate</value>
+  </data>
+  <data name="lblACTEndDate" xml:space="preserve">
+    <value>ACTEndDate</value>
+  </data>
+  <data name="lblACTContent" xml:space="preserve">
+    <value>ACT Content</value>
+  </data>
+  <data name="lblACTOPPID" xml:space="preserve">
+    <value>ACTOPPID</value>
+  </data>
+  <data name="lblACTCDate" xml:space="preserve">
+    <value>ACTCDate</value>
+  </data>
+  <data name="lblACTCUser" xml:space="preserve">
+    <value>ACTCUser</value>
+  </data>
+  <data name="lblACTModifyDate" xml:space="preserve">
+    <value>ACTModifyDate</value>
+  </data>
+  <data name="lblACTModifyUser" xml:space="preserve">
+    <value>ACTModifyUser</value>
+  </data>
+  <data name="lblAction" xml:space="preserve">
+    <value>Customer Contact</value>
+  </data>
+  <data name="lblRoleID" xml:space="preserve">
+    <value>RoleID</value>
+  </data>
+  <data name="lblUserID" xml:space="preserve">
+    <value>UserID</value>
+  </data>
+  <data name="lblUserRole" xml:space="preserve">
+    <value>UserRole</value>
+  </data>
+  <data name="lblProdID" xml:space="preserve">
+    <value>ProdID</value>
+  </data>
+  <data name="lblOpportunityProd" xml:space="preserve">
+    <value>OpportunityProd</value>
+  </data>
+  <data name="lblUserFullName" xml:space="preserve">
+    <value>UserFullName</value>
+  </data>
+  <data name="lblMobile" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="lblCDate" xml:space="preserve">
+    <value>CDate</value>
+  </data>
+  <data name="lblCUser" xml:space="preserve">
+    <value>CUser</value>
+  </data>
+  <data name="lblIsActive" xml:space="preserve">
+    <value>IsActive</value>
+  </data>
+  <data name="lblBossID" xml:space="preserve">
+    <value>BossID</value>
+  </data>
+  <data name="lblCustID" xml:space="preserve">
+    <value>CustID</value>
+  </data>
+  <data name="lblCustCode" xml:space="preserve">
+    <value>CustCode</value>
+  </data>
+  <data name="lblCustName" xml:space="preserve">
+    <value>CustName</value>
+  </data>
+  <data name="lblCustFullName" xml:space="preserve">
+    <value>CustFullName</value>
+  </data>
+  <data name="lblCustRelationID" xml:space="preserve">
+    <value>CustRelationID</value>
+  </data>
+  <data name="lblCustIndustryID" xml:space="preserve">
+    <value>CustIndustryID</value>
+  </data>
+  <data name="lblCustEmpNumID" xml:space="preserve">
+    <value>CustEmpNumID</value>
+  </data>
+  <data name="lblCustFromID" xml:space="preserve">
+    <value>CustFromID</value>
+  </data>
+  <data name="lblCustStatusID" xml:space="preserve">
+    <value>CustStatusID</value>
+  </data>
+  <data name="lblCustInfo" xml:space="preserve">
+    <value>CustInfo</value>
+  </data>
+  <data name="lblCustCountryID" xml:space="preserve">
+    <value>CustCountryID</value>
+  </data>
+  <data name="lblCustProvince" xml:space="preserve">
+    <value>CustProvince</value>
+  </data>
+  <data name="lblCustCity" xml:space="preserve">
+    <value>CustCity</value>
+  </data>
+  <data name="lblCustDistinct" xml:space="preserve">
+    <value>CustDistinct</value>
+  </data>
+  <data name="lblCustAddress" xml:space="preserve">
+    <value>CustAddress</value>
+  </data>
+  <data name="lblCustTel" xml:space="preserve">
+    <value>CustTel</value>
+  </data>
+  <data name="lblCustFax" xml:space="preserve">
+    <value>CustFax</value>
+  </data>
+  <data name="lblCustWeb" xml:space="preserve">
+    <value>CustWeb</value>
+  </data>
+  <data name="lblCustCDate" xml:space="preserve">
+    <value>CustCDate</value>
+  </data>
+  <data name="lblCustCUserID" xml:space="preserve">
+    <value>CustCUserID</value>
+  </data>
+  <data name="lblCustModifyDate" xml:space="preserve">
+    <value>CustModifyDate</value>
+  </data>
+  <data name="lblCustModifyUserID" xml:space="preserve">
+    <value>CustModifyUserID</value>
+  </data>
+  <data name="lblCustOwnerID" xml:space="preserve">
+    <value>CustOwnerID</value>
+  </data>
+  <data name="lblLogID" xml:space="preserve">
+    <value>LogID</value>
+  </data>
+  <data name="lblLogTableName" xml:space="preserve">
+    <value>LogTableName</value>
+  </data>
+  <data name="lblLogPKID" xml:space="preserve">
+    <value>LogPKID</value>
+  </data>
+  <data name="lblLogContent" xml:space="preserve">
+    <value>LogContent</value>
+  </data>
+  <data name="lblLogDate" xml:space="preserve">
+    <value>LogDate</value>
+  </data>
+  <data name="lblLogUser" xml:space="preserve">
+    <value>LogUser</value>
+  </data>
+  <data name="lblAuditLog" xml:space="preserve">
+    <value>AuditLog</value>
+  </data>
+  <data name="MsgSYSID" xml:space="preserve">
+    <value>SYSID is required</value>
+  </data>
+  <data name="MsgSYSName" xml:space="preserve">
+    <value>SYSName is required</value>
+  </data>
+  <data name="MsgSYSWeb" xml:space="preserve">
+    <value>SYSWeb is required</value>
+  </data>
+  <data name="MsgSYSContact" xml:space="preserve">
+    <value>SYSContact is required</value>
+  </data>
+  <data name="MsgSYSContactTel" xml:space="preserve">
+    <value>SYSContactTel is required</value>
+  </data>
+  <data name="MsgSYSCDate" xml:space="preserve">
+    <value>SYSCDate is required</value>
+  </data>
+  <data name="MsgSYSBeginDate" xml:space="preserve">
+    <value>SYSBeginDate is required</value>
+  </data>
+  <data name="MsgSYSExpiryDate" xml:space="preserve">
+    <value>SYSExpiryDate is required</value>
+  </data>
+  <data name="MsgContactID" xml:space="preserve">
+    <value>ContactID is required</value>
+  </data>
+  <data name="MsgContactName" xml:space="preserve">
+    <value>ContactName is required</value>
+  </data>
+  <data name="MsgContactSex" xml:space="preserve">
+    <value>ContactSex is required</value>
+  </data>
+  <data name="MsgContactTypeID" xml:space="preserve">
+    <value>ContactTypeID is required</value>
+  </data>
+  <data name="MsgContactDept" xml:space="preserve">
+    <value>ContactDept is required</value>
+  </data>
+  <data name="MsgContactTitle" xml:space="preserve">
+    <value>ContactTitle is required</value>
+  </data>
+  <data name="MsgContactTel" xml:space="preserve">
+    <value>ContactTel is required</value>
+  </data>
+  <data name="MsgContactMobile" xml:space="preserve">
+    <value>ContactMobile is required</value>
+  </data>
+  <data name="MsgContactEmail" xml:space="preserve">
+    <value>ContactEmail is required</value>
+  </data>
+  <data name="MsgContactMSN" xml:space="preserve">
+    <value>ContactMSN is required</value>
+  </data>
+  <data name="MsgContactQQ" xml:space="preserve">
+    <value>ContactQQ is required</value>
+  </data>
+  <data name="MsgContactFax" xml:space="preserve">
+    <value>ContactFax is required</value>
+  </data>
+  <data name="MsgContactCustID" xml:space="preserve">
+    <value>ContactCustID is required</value>
+  </data>
+  <data name="MsgCustTypeID" xml:space="preserve">
+    <value>CustTypeID is required</value>
+  </data>
+  <data name="MsgCustType" xml:space="preserve">
+    <value>CustType is required</value>
+  </data>
+  <data name="MsgIndustryID" xml:space="preserve">
+    <value>IndustryID is required</value>
+  </data>
+  <data name="MsgIndustry" xml:space="preserve">
+    <value>Industry is required</value>
+  </data>
+  <data name="MsgRelationID" xml:space="preserve">
+    <value>RelationID is required</value>
+  </data>
+  <data name="MsgRelation" xml:space="preserve">
+    <value>Relation is required</value>
+  </data>
+  <data name="MsgEmpNum" xml:space="preserve">
+    <value>EmpNum is required</value>
+  </data>
+  <data name="MsgCustFrom" xml:space="preserve">
+    <value>CustFrom is required</value>
+  </data>
+  <data name="MsgCustStatus" xml:space="preserve">
+    <value>CustStatus is required</value>
+  </data>
+  <data name="MsgCountryID" xml:space="preserve">
+    <value>CountryID is required</value>
+  </data>
+  <data name="MsgCountry" xml:space="preserve">
+    <value>Country is required</value>
+  </data>
+  <data name="MsgContactType" xml:space="preserve">
+    <value>ContactType is required</value>
+  </data>
+  <data name="MsgOPPPhase" xml:space="preserve">
+    <value>OPPPhase is required</value>
+  </data>
+  <data name="MsgOPPStatus" xml:space="preserve">
+    <value>OPPStatus is required</value>
+  </data>
+  <data name="MsgACTID" xml:space="preserve">
+    <value>ACTID is required</value>
+  </data>
+  <data name="MsgACTUser" xml:space="preserve">
+    <value>ACTUser is required</value>
+  </data>
+  <data name="MsgOPPID" xml:space="preserve">
+    <value>OPPID is required</value>
+  </data>
+  <data name="MsgOPPCustID" xml:space="preserve">
+    <value>OPPCustID is required</value>
+  </data>
+  <data name="MsgOPPRequest" xml:space="preserve">
+    <value>OPPRequest is required</value>
+  </data>
+  <data name="MsgOPPOwner" xml:space="preserve">
+    <value>OPPOwner is required</value>
+  </data>
+  <data name="MsgOPPFromID" xml:space="preserve">
+    <value>OPPFromID is required</value>
+  </data>
+  <data name="MsgOPPExpectDate" xml:space="preserve">
+    <value>OPPExpectDate is required</value>
+  </data>
+  <data name="MsgOPPExpectAmount" xml:space="preserve">
+    <value>OPPExpectAmount is required</value>
+  </data>
+  <data name="MsgOPPPhaseID" xml:space="preserve">
+    <value>OPPPhaseID is required</value>
+  </data>
+  <data name="MsgOPPProbability" xml:space="preserve">
+    <value>OPPProbability is required</value>
+  </data>
+  <data name="MsgOPPStatusID" xml:space="preserve">
+    <value>OPPStatusID is required</value>
+  </data>
+  <data name="MsgOPPRemark" xml:space="preserve">
+    <value>OPPRemark is required</value>
+  </data>
+  <data name="MsgOPPCDate" xml:space="preserve">
+    <value>OPPCDate is required</value>
+  </data>
+  <data name="MsgOPPCUser" xml:space="preserve">
+    <value>OPPCUser is required</value>
+  </data>
+  <data name="MsgOPPModifyDate" xml:space="preserve">
+    <value>OPPModifyDate is required</value>
+  </data>
+  <data name="MsgOPPModifyUser" xml:space="preserve">
+    <value>OPPModifyUser is required</value>
+  </data>
+  <data name="MsgACTSubject" xml:space="preserve">
+    <value>ACTSubject is required</value>
+  </data>
+  <data name="MsgACTType" xml:space="preserve">
+    <value>ACTType is required</value>
+  </data>
+  <data name="MsgACTBeginDate" xml:space="preserve">
+    <value>ACTBeginDate is required</value>
+  </data>
+  <data name="MsgACTEndDate" xml:space="preserve">
+    <value>ACTEndDate is required</value>
+  </data>
+  <data name="MsgACTContent" xml:space="preserve">
+    <value>ACTContent is required</value>
+  </data>
+  <data name="MsgACTOPPID" xml:space="preserve">
+    <value>ACTOPPID is required</value>
+  </data>
+  <data name="MsgACTCDate" xml:space="preserve">
+    <value>ACTCDate is required</value>
+  </data>
+  <data name="MsgACTCUser" xml:space="preserve">
+    <value>ACTCUser is required</value>
+  </data>
+  <data name="MsgACTModifyDate" xml:space="preserve">
+    <value>ACTModifyDate is required</value>
+  </data>
+  <data name="MsgACTModifyUser" xml:space="preserve">
+    <value>ACTModifyUser is required</value>
+  </data>
+  <data name="MsgRoleID" xml:space="preserve">
+    <value>RoleID is required</value>
+  </data>
+  <data name="MsgUserID" xml:space="preserve">
+    <value>UserID is required</value>
+  </data>
+  <data name="MsgProdID" xml:space="preserve">
+    <value>ProdID is required</value>
+  </data>
+  <data name="MsgUserFullName" xml:space="preserve">
+    <value>UserFullName is required</value>
+  </data>
+  <data name="MsgMobile" xml:space="preserve">
+    <value>Mobile is required</value>
+  </data>
+  <data name="MsgCDate" xml:space="preserve">
+    <value>CDate is required</value>
+  </data>
+  <data name="MsgCUser" xml:space="preserve">
+    <value>CUser is required</value>
+  </data>
+  <data name="MsgIsActive" xml:space="preserve">
+    <value>IsActive is required</value>
+  </data>
+  <data name="MsgBossID" xml:space="preserve">
+    <value>BossID is required</value>
+  </data>
+  <data name="MsgCustID" xml:space="preserve">
+    <value>CustID is required</value>
+  </data>
+  <data name="MsgCustCode" xml:space="preserve">
+    <value>CustCode is required</value>
+  </data>
+  <data name="MsgCustName" xml:space="preserve">
+    <value>CustName is required</value>
+  </data>
+  <data name="MsgCustFullName" xml:space="preserve">
+    <value>CustFullName is required</value>
+  </data>
+  <data name="MsgCustRelationID" xml:space="preserve">
+    <value>CustRelationID is required</value>
+  </data>
+  <data name="MsgCustIndustryID" xml:space="preserve">
+    <value>CustIndustryID is required</value>
+  </data>
+  <data name="MsgCustEmpNumID" xml:space="preserve">
+    <value>CustEmpNumID is required</value>
+  </data>
+  <data name="MsgCustFromID" xml:space="preserve">
+    <value>CustFromID is required</value>
+  </data>
+  <data name="MsgCustStatusID" xml:space="preserve">
+    <value>CustStatusID is required</value>
+  </data>
+  <data name="MsgCustInfo" xml:space="preserve">
+    <value>CustInfo is required</value>
+  </data>
+  <data name="MsgCustCountryID" xml:space="preserve">
+    <value>CustCountryID is required</value>
+  </data>
+  <data name="MsgCustProvince" xml:space="preserve">
+    <value>CustProvince is required</value>
+  </data>
+  <data name="MsgCustCity" xml:space="preserve">
+    <value>CustCity is required</value>
+  </data>
+  <data name="MsgCustDistinct" xml:space="preserve">
+    <value>CustDistinct is required</value>
+  </data>
+  <data name="MsgCustAddress" xml:space="preserve">
+    <value>CustAddress is required</value>
+  </data>
+  <data name="MsgCustTel" xml:space="preserve">
+    <value>CustTel is required</value>
+  </data>
+  <data name="MsgCustFax" xml:space="preserve">
+    <value>CustFax is required</value>
+  </data>
+  <data name="MsgCustWeb" xml:space="preserve">
+    <value>CustWeb is required</value>
+  </data>
+  <data name="MsgCustCDate" xml:space="preserve">
+    <value>CustCDate is required</value>
+  </data>
+  <data name="MsgCustCUserID" xml:space="preserve">
+    <value>CustCUserID is required</value>
+  </data>
+  <data name="MsgCustModifyDate" xml:space="preserve">
+    <value>CustModifyDate is required</value>
+  </data>
+  <data name="MsgCustModifyUserID" xml:space="preserve">
+    <value>CustModifyUserID is required</value>
+  </data>
+  <data name="MsgCustOwnerID" xml:space="preserve">
+    <value>CustOwnerID is required</value>
+  </data>
+  <data name="MsgLogID" xml:space="preserve">
+    <value>LogID is required</value>
+  </data>
+  <data name="MsgLogTableName" xml:space="preserve">
+    <value>LogTableName is required</value>
+  </data>
+  <data name="MsgLogPKID" xml:space="preserve">
+    <value>LogPKID is required</value>
+  </data>
+  <data name="MsgLogContent" xml:space="preserve">
+    <value>LogContent is required</value>
+  </data>
+  <data name="MsgLogDate" xml:space="preserve">
+    <value>LogDate is required</value>
+  </data>
+  <data name="MsgLogUser" xml:space="preserve">
+    <value>LogUser is required</value>
+  </data>
+  <data name="lblAddAction" xml:space="preserve">
+    <value>Add Action</value>
+  </data>
+  <data name="lblCtrlPanel" xml:space="preserve">
+    <value>Control Panel</value>
+  </data>
+  <data name="lblDepartment" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="lblDepName" xml:space="preserve">
+    <value>Department Name</value>
+  </data>
+  <data name="MsgDepName" xml:space="preserve">
+    <value>Department Name is required</value>
+  </data>
+  <data name="lblAddContact" xml:space="preserve">
+    <value>Add Contact</value>
+  </data>
+  <data name="lblMaterial" xml:space="preserve">
+    <value>Material Usage</value>
+  </data>
+  <data name="lblPayMethod" xml:space="preserve">
+    <value>Pay Method</value>
+  </data>
+  <data name="lblPurchaseChannels" xml:space="preserve">
+    <value>Purchase Channels</value>
+  </data>
+  <data name="lblSaleChannels" xml:space="preserve">
+    <value>Sale Channels</value>
+  </data>
+  <data name="MsgMaterial" xml:space="preserve">
+    <value>Material Usage is required</value>
+  </data>
+  <data name="MsgPayMethod" xml:space="preserve">
+    <value>Pay Method is required</value>
+  </data>
+  <data name="MsgPurchaseChannels" xml:space="preserve">
+    <value>Purchase Channels is required</value>
+  </data>
+  <data name="MsgSaleChannels" xml:space="preserve">
+    <value>Sale Channels is required</value>
+  </data>
+  <data name="lblArrivalPort" xml:space="preserve">
+    <value>Arrival Port</value>
+  </data>
+  <data name="MsgArrivalPort" xml:space="preserve">
+    <value>Arrival Port is required</value>
+  </data>
+  <data name="lblBidPrice" xml:space="preserve">
+    <value>Bid Price</value>
+  </data>
+  <data name="MsgBidPrice" xml:space="preserve">
+    <value>Bid Price is required</value>
+  </data>
+  <data name="lblProdUsage" xml:space="preserve">
+    <value>Product Usage</value>
+  </data>
+  <data name="lblCustProduct" xml:space="preserve">
+    <value>Customer's Production</value>
+  </data>
+  <data name="lblDealRecords" xml:space="preserve">
+    <value>Deal Records</value>
+  </data>
+  <data name="lblTelRecords" xml:space="preserve">
+    <value>Tel. Records</value>
+  </data>
+  <data name="lblVisitRecords" xml:space="preserve">
+    <value>Visit Records</value>
+  </data>
+  <data name="lblACTNextBuyDate" xml:space="preserve">
+    <value>Next Buy Date</value>
+  </data>
+  <data name="lblBidAlready" xml:space="preserve">
+    <value>Bid already</value>
+  </data>
+  <data name="lblProductCode" xml:space="preserve">
+    <value>Product Code</value>
+  </data>
+  <data name="lblActionTel" xml:space="preserve">
+    <value>Tel Contact Records</value>
+  </data>
+  <data name="lblActionVisit" xml:space="preserve">
+    <value>Visit Records</value>
+  </data>
+  <data name="lblModuleRight" xml:space="preserve">
+    <value>Module Right</value>
+  </data>
+  <data name="lblCustomerDeal" xml:space="preserve">
+    <value>Customer Deal</value>
+  </data>
+  <data name="lblDealDate" xml:space="preserve">
+    <value>Deal Date</value>
+  </data>
+  <data name="lblIdle15days" xml:space="preserve">
+    <value>No contact for last 15 days</value>
+  </data>
+  <data name="lblCancelCnt" xml:space="preserve">
+    <value>Cancel Contract Qty</value>
+  </data>
+  <data name="lblTask" xml:space="preserve">
+    <value>Task</value>
+  </data>
+  <data name="lblTaskDate" xml:space="preserve">
+    <value>Task Time</value>
+  </data>
+  <data name="lblUserCustTransfer" xml:space="preserve">
+    <value>Transfer User's Customers to other</value>
+  </data>
+  <data name="lblEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="lblUserCustTransferDesc" xml:space="preserve">
+    <value>This action will transfer user's customer to another one,you can also choose to delete the user </value>
+  </data>
+  <data name="lblActDesc" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lblVerUpdate" xml:space="preserve">
+    <value>Version Update</value>
+  </data>
+  <data name="lblStop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="MsgEmail" xml:space="preserve">
+    <value>Email is required</value>
+  </data>
+  <data name="lblCommissionFactor" xml:space="preserve">
+    <value>Commission Factor</value>
+  </data>
+  <data name="lblActionBid" xml:space="preserve">
+    <value>Bid</value>
+  </data>
+  <data name="lblShipment" xml:space="preserve">
+    <value>Shipment</value>
+  </data>
+  <data name="MsgAlert" xml:space="preserve">
+    <value>Alert</value>
+  </data>
+  <data name="lblActiveUsers" xml:space="preserve">
+    <value>Active Users</value>
+  </data>
+  <data name="lblInactiveUsers" xml:space="preserve">
+    <value>Inactive Users</value>
+  </data>
+  <data name="lblUserLoginHistory" xml:space="preserve">
+    <value>User Login History</value>
+  </data>
+  <data name="lblCategory" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="MsgCategory" xml:space="preserve">
+    <value>Category is required</value>
+  </data>
+  <data name="lblTaskManage" xml:space="preserve">
+    <value>Task Manage</value>
+  </data>
+  <data name="lblBirthDay" xml:space="preserve">
+    <value>BirthDay</value>
+  </data>
+  <data name="lblGender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="MsgGender" xml:space="preserve">
+    <value>Gender is required</value>
+  </data>
+  <data name="lblAdditionInfo" xml:space="preserve">
+    <value>Additional Info</value>
+  </data>
+  <data name="lblBuddyList" xml:space="preserve">
+    <value>Buddy List</value>
+  </data>
+  <data name="lblBudget" xml:space="preserve">
+    <value>消费预算</value>
+  </data>
+  <data name="lblFavoriteDest" xml:space="preserve">
+    <value>常去城市</value>
+  </data>
+  <data name="lblFavoriteProd" xml:space="preserve">
+    <value>喜好航空公司</value>
+  </data>
+  <data name="lblParentCompany" xml:space="preserve">
+    <value>所属公司</value>
+  </data>
+  <data name="lblPassport" xml:space="preserve">
+    <value>护照</value>
+  </data>
+  <data name="lblPassportExpiryDate" xml:space="preserve">
+    <value>护照有效期</value>
+  </data>
+  <data name="lblPosition" xml:space="preserve">
+    <value>职位</value>
+  </data>
+  <data name="lblPreferPlace" xml:space="preserve">
+    <value>起飞地点</value>
+  </data>
+  <data name="lblPreferPrice" xml:space="preserve">
+    <value>舱位喜好</value>
+  </data>
+  <data name="lblRequireVisa" xml:space="preserve">
+    <value>每次都签证</value>
+  </data>
+  <data name="lblTravelDay" xml:space="preserve">
+    <value>每年飞行时段</value>
+  </data>
+  <data name="lblUseOwnMoney" xml:space="preserve">
+    <value>是否花自己钱</value>
+  </data>
+  <data name="lblResetFilter" xml:space="preserve">
+    <value>Reset Filter</value>
+  </data>
+  <data name="LblLatestDealDate" xml:space="preserve">
+    <value>Latest Deal Date</value>
+  </data>
+  <data name="lblEmailMarketing" xml:space="preserve">
+    <value>Email Marketing</value>
+  </data>
+  <data name="lblTicket" xml:space="preserve">
+    <value>Ticket</value>
+  </data>
+  <data name="lblVisa" xml:space="preserve">
+    <value>Visa</value>
+  </data>
+  <data name="lblInnerReferenceID" xml:space="preserve">
+    <value>Inner ReferenceID</value>
+  </data>
+  <data name="lblOuterReferenceID" xml:space="preserve">
+    <value>Outer ReferenceID</value>
+  </data>
+  <data name="lblBookingDate" xml:space="preserve">
+    <value>Booking Date</value>
+  </data>
+  <data name="lblAccessory" xml:space="preserve">
+    <value>Accessory</value>
+  </data>
+  <data name="lblAirline" xml:space="preserve">
+    <value>Airlines</value>
+  </data>
+  <data name="lblCancellationFee" xml:space="preserve">
+    <value>Cancellation Fee</value>
+  </data>
+  <data name="lblChangeFee" xml:space="preserve">
+    <value>Change Fee</value>
+  </data>
+  <data name="lblDepAddress" xml:space="preserve">
+    <value>Department Address</value>
+  </data>
+  <data name="lblDestination" xml:space="preserve">
+    <value>Destination</value>
+  </data>
+  <data name="lblMaxLuggage" xml:space="preserve">
+    <value>Max Luggage</value>
+  </data>
+  <data name="lblPaymentDate" xml:space="preserve">
+    <value>PaymentDate</value>
+  </data>
+  <data name="MsgAccessory" xml:space="preserve">
+    <value>Accessory is required</value>
+  </data>
+  <data name="MsgAirline" xml:space="preserve">
+    <value>Airlines is required</value>
+  </data>
+  <data name="MsgCancellationFee" xml:space="preserve">
+    <value>Cancellation Fee is required</value>
+  </data>
+  <data name="MsgChangeFee" xml:space="preserve">
+    <value>Change Fee is required</value>
+  </data>
+  <data name="MsgDepAddress" xml:space="preserve">
+    <value>Department Address is required</value>
+  </data>
+  <data name="MsgDestination" xml:space="preserve">
+    <value>Destination is required</value>
+  </data>
+  <data name="MsgInnerReferenceID" xml:space="preserve">
+    <value>Inner ReferenceID is required</value>
+  </data>
+  <data name="MsgMaxLuggage" xml:space="preserve">
+    <value>Max Luggage is required</value>
+  </data>
+  <data name="MsgPaymentDate" xml:space="preserve">
+    <value>PaymentDate is required</value>
+  </data>
+  <data name="lblPDF" xml:space="preserve">
+    <value>Export Pdf</value>
+  </data>
+  <data name="lblExcel" xml:space="preserve">
+    <value>Export to Excel</value>
+  </data>
+  <data name="lblRestore" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="lblChange" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="lblBankAccount" xml:space="preserve">
+    <value>Bank Account</value>
+  </data>
+  <data name="MsgBankAccount" xml:space="preserve">
+    <value>Customer's bank account is required when refund</value>
+  </data>
+  <data name="lblCustBackground" xml:space="preserve">
+    <value>Customer background</value>
+  </data>
+  <data name="lblCustRisk" xml:space="preserve">
+    <value>Customer Risk</value>
+  </data>
+  <data name="MsgCustBackground" xml:space="preserve">
+    <value>Customer backgroud is required</value>
+  </data>
+  <data name="MsgCustRisk" xml:space="preserve">
+    <value>Customer Risk is required</value>
+  </data>
+  <data name="lblCustBrief" xml:space="preserve">
+    <value>lblCustBrief</value>
+  </data>
+  <data name="lblNext" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="lblPrevious" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="lblProductFactor" xml:space="preserve">
+    <value>Product Factor</value>
+  </data>
+  <data name="lblApprove" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="lblApprovedBy" xml:space="preserve">
+    <value>Approved By</value>
+  </data>
+  <data name="lblReject" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+</root>

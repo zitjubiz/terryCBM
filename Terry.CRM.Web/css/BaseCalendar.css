@@ -1,0 +1,227 @@
+﻿/* basic calendar */
+
+table.basic
+{
+	border: solid 1px steelblue;
+	border-collapse: collapse;
+}
+.basic thead table
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+.basic thead table td
+{
+	border: 0px;
+	padding: 4px;
+}
+.basic .basic_navprev
+{
+	text-align: left;
+}
+.basic .basic_navcurrent
+{
+	text-align: center;
+	font-weight: bold;
+}
+.basic .basic_navnext
+{
+	text-align: right;
+}
+.basic td, .basic th
+{
+	border: solid 1px lightsteelblue;
+	text-align: center;
+	padding: 6px;
+}
+
+/* simple calendar */
+
+.simple
+{
+	border: solid 1px lightsteelblue;
+	border-collapse: collapse;
+	width:960px;
+}
+.simple caption
+{
+	background-color: gainsboro;
+	padding: 8px;
+	border-top: solid 1px silver;
+	border-left: solid 1px silver;
+	border-right: solid 1px silver;
+}
+.simple thead th
+{
+	padding: 0;
+	height:20px;
+}
+.simple tbody td
+{
+	border: solid 1px lightsteelblue;
+	text-align: right;
+	vertical-align:top;
+	width: 120px;
+	height:70px;
+}
+.simple thead td
+{
+	height:20px;
+}
+.simple thead table
+{
+	border-collapse: collapse;
+	width: 100% !important;
+	background-color: lemonchiffon;
+}
+.simple thead table td
+{
+	border: 0px;
+	padding: 8px !important;
+}
+.simple .simple_nav_row th
+{
+	padding: 0px;
+}
+.simple .simple_navprev
+{
+	text-align: left;
+	width: 15%;
+}
+.simple .simple_navcurrent
+{
+	text-align: center;
+	font-weight: bold;
+	font-size: large;
+	width: 70%;
+}
+.simple .simple_navnext
+{
+	text-align: right;
+	width: 15%;
+}
+.simple .simple_navprev a, .simple .simple_navnext a
+{
+	text-decoration: none;
+	color: dimgray;
+}
+.simple .simple_navprev a:hover, .simple .simple_navnext a:hover
+{
+	text-decoration: underline;
+}
+.simple .simple_dof th
+{
+	background-color: lightsteelblue;
+	height: 20px;
+}
+.simple_week
+{
+	background-color: whitesmoke;
+}
+.simple_other_month
+{
+	color: Silver;
+}
+.simple_today
+{
+	background-color: #FAD163;
+	border-left: 1px solid #FAD163;
+	color: white;
+}
+.simple_weekend
+{
+	background-color: whitesmoke;
+	color: gray;
+}
+.simple a.day
+{
+	text-decoration:none;
+	cursor:pointer;
+}
+.simple a.day:hover
+{
+	text-decoration:underline;
+	cursor:pointer;
+}
+.simple a.task
+{
+	text-decoration:none;
+	cursor:pointer;
+	color:#2952A3;
+}
+.simple a.taskApproved
+{
+	text-decoration:none;
+	cursor:pointer;
+	color:#2952A3;
+	background:lime;
+}
+.simple a.taskReject
+{
+	text-decoration:none;
+	cursor:pointer;
+	color:white;
+	background:red;
+}
+.simple div.dayheader
+{
+	background-color: #F8F9FF;
+	border-left: 1px solid #DDD;
+	border-top: 1px solid #DDD;
+	color: #666;
+	line-height: 16px;
+	overflow: hidden;
+	padding: 0px;
+	text-align: right;
+	white-space:nowrap;
+	width:100%;
+}
+/* Customer Tag ul,lik */
+.cal
+{
+	width: 700px; /* (88px width + 2 * (5 + 1 for margin and padding)) * 7 = 700 */
+	border: 1px solid #333;
+	background-color: #ddd;
+}
+
+.cal, .cal ul, .cal li
+{
+	margin: 0;
+	padding: 0;
+}
+
+.cal li, .cal li ul li
+{
+	list-style: none;
+}
+
+.cal li ul li
+{
+	list-style-position: inside;
+	width: 88px;
+	height: 88px;
+	border: 1px solid #999;
+	float: left;
+	background-color: #fff;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.cal .clear
+{
+	clear: both;
+	width: 0px;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+.cal .dayofweek li
+{
+	height: 16px;
+	text-align: center;
+	background-color: lightsteelblue;
+	border: 1px solid steelblue;
+	color: dimgray;
+	font-weight: bold;
+}

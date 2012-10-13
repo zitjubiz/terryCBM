@@ -1,0 +1,1 @@
+<% throw New Exception("hello world") %>

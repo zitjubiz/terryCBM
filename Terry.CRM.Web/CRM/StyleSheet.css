@@ -1,0 +1,13 @@
+﻿        .TabArea
+        {
+                    background-color: White;
+                    font-size: x-small;
+                    border-left: 1px solid black;
+                    border-bottom: 1px solid black;
+                    border-right: 1px solid black;
+                    border-top:1px solid black;
+                    position:absolute;
+                    top:42px;
+                    height:400px;
+                    z-index:-25;
+        }

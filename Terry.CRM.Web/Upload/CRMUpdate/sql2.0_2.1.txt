@@ -1,0 +1,3 @@
+EXEC sp_rename 'CRMAuditLog.[CustID]', 'PKID', 'column' 
+
+add boss role with new module[bankstatement] right

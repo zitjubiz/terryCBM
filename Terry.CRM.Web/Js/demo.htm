@@ -1,0 +1,91 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+  <title>Ajax Autocomplete for jQuery</title>
+  <meta name="keywords" content="ajax,autocomplete,jquery,javascript,autosuggest" />
+  <meta name="description" content="Ajax Autocomplete for jQuery allows you to easily create autocomplete/autosuggest boxes for text input fields." />
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <script src="jquery.js" type="text/javascript"></script>
+  <script src="jquery.autocomplete.js" type="text/javascript"></script>
+  <!--[if lte IE 7]>
+  <style type="text/css">
+  .autocomplete-w1 { left:0px; top:8px; }
+  pre { padding-bottom:25px; overflow-y:hidden; }
+  </style>
+  <![endif]-->
+</head>
+<body>
+      <h2 style="clear:both;" id="demo">Demo</h2>
+      <p>Ajax autosuggest sample (start typing country name):</p>
+      <form class="form" action="default.aspx" onsubmit="alert('Submit Form Event'); return false;">
+        <div id="selection"></div>
+        <input type="text" name="q" id="query" class="textbox" />
+        <input type="button" value="OK" />
+        <div style="padding:5px;"><label><input type="checkbox" onclick="this.checked ? a1.disable() : a1.enable();" /> Disable Autocomplete</label></div>
+      </form>
+      <br />
+
+      <p>Local(no ajax) autosuggest sample (start typing month name):</p>
+      <form class="form" action="default.aspx" onsubmit="alert('Submit Form Event'); return false;">
+        <input type="text" name="q" id="months" class="textbox" />
+        <input type="button" value="OK" />
+        <div style="padding:5px;">
+         Suggest: 
+         <label><input type="radio" name="Suggest" value="Month" onclick="InitMonths();" style="vertical-align:middle;" checked="checked" /> Month</label> &nbsp;&nbsp;
+         <label><input type="radio" name="Suggest" value="Weekday" onclick="InitWeekdays();" style="vertical-align:middle;" /> Weekday</label>
+        </div>
+      </form>
+      <br />
+     
+      <p>Note: Delimiter support has been added in v1.0.5. Try separate countries by "," or ";".</p>
+
+<script type="text/javascript">
+  //<![CDATA[
+
+  var a1;
+  var a2;
+
+  function InitMonths() {
+    a2.setOptions({ lookup: 'January,February,March,April,May,June,July,August,September,October,November,December'.split(',') });
+  }
+
+  function InitWeekdays() {
+    a2.setOptions({ lookup: 'Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday'.split(',') });
+  }
+  
+  jQuery(function() {
+
+    var onAutocompleteSelect = function(value, data) {
+      $('#selection').html('<img src="\/global\/flags\/small\/' + data + '.png" alt="" \/> ' + value);
+      //alert(data);
+    }
+
+    var options = {
+      serviceUrl: '/projects/autocomplete/service/autocomplete.ashx',
+      width: 300,
+      delimiter: /(,|;)\s*/,
+      onSelect: onAutocompleteSelect,
+      deferRequestBy: 0, //miliseconds
+      params: { country: 'Yes' }
+    };
+
+    a1 = $('#query').autocomplete(options);
+
+    a2 = $('#months').autocomplete({
+      width: 300,
+      delimiter: /(,|;)\s*/,
+      lookup: 'January,February,March,April,May,June,July,August,September,October,November,December'.split(',')
+    });    $('#navigation a').each(function() {
+      $(this).click(function(e) {
+        var element = $(this).attr('href');
+        $('html').animate({ scrollTop: $(element).offset().top }, 300, null, function() { document.location = element; });
+        e.preventDefault();
+      });
+    });
+
+
+  });
+  
+//]]>
+</script>

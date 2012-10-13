@@ -1,0 +1,1642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1FE40E63-CE7C-4FFC-B219-36B63B58B90D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Terry.CRM.Web</RootNamespace>
+    <AssemblyName>Terry.CRM.Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PublishDatabaseSettings>
+      <Objects>
+        <ObjectGroup Name="Terry.CRM.Entity.Properties.Settings.CRMConnectionString-Deployment" Order="1">
+          <Destination Path="" />
+          <Object Type="dbFullSql">
+            <PreSource Path="Data Source=%28local%29\sqlexpress%3bInitial Catalog=CRM2.0%3bIntegrated Security=True" ScriptSchema="True" ScriptData="False" CopyAllFullTextCatalogs="False" DriDefaults="True" />
+            <Source Path="obj\Debug\AutoScripts\Terry.CRM.Entity.Properties.Settings.CRMConnectionString-Deployment_SchemaOnly.sql" Transacted="True" />
+          </Object>
+        </ObjectGroup>
+      </Objects>
+    </PublishDatabaseSettings>
+    <DeployIisAppPath>Default Web Site/TerryCRM</DeployIisAppPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\Ref\net35\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="BaseControls, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="CSVLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="DayPilot">
+      <HintPath>..\Ref\DayPilot.dll</HintPath>
+    </Reference>
+    <Reference Include="DropDownCheckList, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ddlex\bin\Release\DropDownCheckList.dll</HintPath>
+    </Reference>
+    <Reference Include="FredCK.FCKeditorV2, Version=2.2.2106.29420, Culture=neutral, PublicKeyToken=4f86767c9b519a06">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Ref\FredCK.FCKeditorV2.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\Ref\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.0.6.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Ref\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.7\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=1.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\npoi\Release binary\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.DDF">
+      <HintPath>..\Ref\NPOI.DDF.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.HPSF">
+      <HintPath>..\Ref\NPOI.HPSF.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.HSSF, Version=1.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\npoi\Release binary\NPOI.HSSF.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.POIFS, Version=1.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\npoi\Release binary\NPOI.POIFS.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.Util">
+      <HintPath>..\Ref\NPOI.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="PagingGridView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="SqlAdmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7bf68f6a22b13253">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SqlAdmin\SqlAdmin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.DataVisualization">
+      <HintPath>..\Ref\net35\System.Web.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Terry.WebControls.DropDownList, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Ref\Terry.WebControls.DropDownList.dll</HintPath>
+    </Reference>
+    <Reference Include="Terry.WebControls.Tab, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Ref\Terry.WebControls.Tab.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CRM\BaseInfo\frmProvince.aspx" />
+    <Content Include="CRM\BaseInfo\frmProvinceEdit.aspx" />
+    <Content Include="CRM\frmSendEmail.aspx" />
+    <Content Include="CRM\GTD\frmReservationMain.aspx" />
+    <Content Include="CRM\GTD\frmScheduleByWeek.aspx" />
+    <Content Include="CRM_Chem\frmActionEdit.aspx" />
+    <Content Include="CRM_Chem\frmContactEdit.aspx" />
+    <Content Include="CRM_Chem\frmCustomer.aspx" />
+    <Content Include="CRM_Chem\frmCustomerBrief.aspx" />
+    <Content Include="CRM_Chem\frmCustomerDeal.aspx" />
+    <Content Include="CRM_Chem\frmCustomerEdit.aspx" />
+    <Content Include="CRM_Chem\frmUserActions.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="images\2sw.jpg" />
+    <Content Include="images\browser_chrome.gif" />
+    <Content Include="images\browser_firefox.gif" />
+    <Content Include="images\browser_ie.gif" />
+    <Content Include="images\browser_opera.gif" />
+    <Content Include="images\browser_safari.gif" />
+    <Content Include="images\minus.png" />
+    <Content Include="images\plus.png" />
+    <Content Include="images\ticket.gif" />
+    <Content Include="images\visum.gif" />
+    <Content Include="Invoice\frmBillReport.aspx" />
+    <Content Include="Invoice\frmDailyIssue.aspx" />
+    <Content Include="Invoice\frmTicket.aspx" />
+    <Content Include="Invoice\frmTicketEdit.aspx" />
+    <Content Include="Invoice\frmVisa.aspx" />
+    <Content Include="Invoice\PdfView.aspx" />
+    <Content Include="Invoice\UCViewSwf.ascx" />
+    <Content Include="Invoice\frmVisaEdit.aspx" />
+    <Content Include="Js\ie6warning.js" />
+    <Content Include="Js\zeroclipboard\test.html" />
+    <Content Include="Js\zeroclipboard\ZeroClipboard.js" />
+    <Content Include="Js\zeroclipboard\ZeroClipboard.swf" />
+    <Content Include="Js\zeroclipboard\ZeroClipboard10.swf" />
+    <Content Include="Service\Customer.asmx" />
+    <Content Include="SqlAdmin\admin.css" />
+    <Content Include="SqlAdmin\Columns.aspx" />
+    <Content Include="SqlAdmin\CreateDatabase.aspx" />
+    <Content Include="SqlAdmin\CreateDatabaseRole.aspx" />
+    <Content Include="SqlAdmin\CreateDatabaseUser.aspx" />
+    <Content Include="SqlAdmin\CreateLogin.aspx" />
+    <Content Include="SqlAdmin\CreateStoredProcedure.aspx" />
+    <Content Include="SqlAdmin\CreateTable.aspx" />
+    <Content Include="SqlAdmin\DatabaseProperties.aspx" />
+    <Content Include="SqlAdmin\DatabaseRoles.aspx" />
+    <Content Include="SqlAdmin\Databases.aspx" />
+    <Content Include="SqlAdmin\DatabaseUsers.aspx" />
+    <Content Include="SqlAdmin\Default.aspx" />
+    <Content Include="SqlAdmin\DeleteColumn.aspx" />
+    <Content Include="SqlAdmin\DeleteDatabase.aspx" />
+    <Content Include="SqlAdmin\DeleteDatabaseRole.aspx" />
+    <Content Include="SqlAdmin\DeleteDatabaseUser.aspx" />
+    <Content Include="SqlAdmin\DeleteStoredProcedure.aspx" />
+    <Content Include="SqlAdmin\DeleteTable.aspx" />
+    <Content Include="SqlAdmin\EditColumn.aspx" />
+    <Content Include="SqlAdmin\EditDatabaseRole.aspx" />
+    <Content Include="SqlAdmin\EditDatabaseUser.aspx" />
+    <Content Include="SqlAdmin\EditServerLogin.aspx" />
+    <Content Include="SqlAdmin\EditServerRole.aspx" />
+    <Content Include="SqlAdmin\EditStoredProcedure.aspx" />
+    <Content Include="SqlAdmin\Error.aspx" />
+    <Content Include="SqlAdmin\Export.aspx" />
+    <Content Include="SqlAdmin\FileProperties.ascx" />
+    <Content Include="SqlAdmin\Global.js" />
+    <Content Include="SqlAdmin\Help\admin.css" />
+    <Content Include="SqlAdmin\Help\Columns.aspx" />
+    <Content Include="SqlAdmin\Help\CreateDatabase.aspx" />
+    <Content Include="SqlAdmin\Help\CreateStoredProcedure.aspx" />
+    <Content Include="SqlAdmin\Help\CreateTable.aspx" />
+    <Content Include="SqlAdmin\Help\DatabaseProperties.aspx" />
+    <Content Include="SqlAdmin\Help\DatabaseRoles.aspx" />
+    <Content Include="SqlAdmin\Help\Databases.aspx" />
+    <Content Include="SqlAdmin\Help\DatabaseUsers.aspx" />
+    <Content Include="SqlAdmin\Help\Default.aspx" />
+    <Content Include="SqlAdmin\Help\DeleteColumn.aspx" />
+    <Content Include="SqlAdmin\Help\DeleteDatabase.aspx" />
+    <Content Include="SqlAdmin\Help\DeleteStoredProcedure.aspx" />
+    <Content Include="SqlAdmin\Help\DeleteTable.aspx" />
+    <Content Include="SqlAdmin\Help\EditColumn.aspx" />
+    <Content Include="SqlAdmin\Help\EditStoredProcedure.aspx" />
+    <Content Include="SqlAdmin\Help\Error.aspx" />
+    <Content Include="SqlAdmin\Help\Export.aspx" />
+    <Content Include="SqlAdmin\Help\HelpFooter.ascx" />
+    <Content Include="SqlAdmin\Help\HelpHeader.ascx" />
+    <Content Include="SqlAdmin\Help\Import.aspx" />
+    <Content Include="SqlAdmin\Help\Login.aspx" />
+    <Content Include="SqlAdmin\Help\QueryDatabase.aspx" />
+    <Content Include="SqlAdmin\Help\RenameTable.aspx" />
+    <Content Include="SqlAdmin\Help\Security.aspx" />
+    <Content Include="SqlAdmin\Help\ServerLogins.aspx" />
+    <Content Include="SqlAdmin\Help\ServerRoles.aspx" />
+    <Content Include="SqlAdmin\Help\StoredProcedures.aspx" />
+    <Content Include="SqlAdmin\Help\Tables.aspx" />
+    <Content Include="SqlAdmin\Help\TOC.inc" />
+    <Content Include="SqlAdmin\images\bg_adminTool.gif" />
+    <Content Include="SqlAdmin\images\bg_horizontal_bottom.gif" />
+    <Content Include="SqlAdmin\images\bg_horizontal_dark.gif" />
+    <Content Include="SqlAdmin\images\bg_horizontal_top.gif" />
+    <Content Include="SqlAdmin\images\bg_left.gif" />
+    <Content Include="SqlAdmin\images\bg_left_bar.gif" />
+    <Content Include="SqlAdmin\images\Black_Line.gif" />
+    <Content Include="SqlAdmin\images\Blue_Back.gif" />
+    <Content Include="SqlAdmin\images\Blue_Back_Right.gif" />
+    <Content Include="SqlAdmin\images\Blue_Dotted_Line.gif" />
+    <Content Include="SqlAdmin\images\Button_Back.gif" />
+    <Content Include="SqlAdmin\images\checkmark.gif" />
+    <Content Include="SqlAdmin\images\checknomark.gif" />
+    <Content Include="SqlAdmin\images\darkBlue.gif" />
+    <Content Include="SqlAdmin\images\darkGray.gif" />
+    <Content Include="SqlAdmin\images\dbs_ico.gif" />
+    <Content Include="SqlAdmin\images\db_ico.gif" />
+    <Content Include="SqlAdmin\images\grayDivide.gif" />
+    <Content Include="SqlAdmin\images\help.gif" />
+    <Content Include="SqlAdmin\images\key.gif" />
+    <Content Include="SqlAdmin\images\logout.gif" />
+    <Content Include="SqlAdmin\images\Logo_Bottom.gif" />
+    <Content Include="SqlAdmin\images\Logo_Top.gif" />
+    <Content Include="SqlAdmin\images\navy.gif" />
+    <Content Include="SqlAdmin\images\New.gif" />
+    <Content Include="SqlAdmin\images\paleYellow.gif" />
+    <Content Include="SqlAdmin\images\prop_ico.gif" />
+    <Content Include="SqlAdmin\images\Query_Ico.gif" />
+    <Content Include="SqlAdmin\images\Roles_Ico.gif" />
+    <Content Include="SqlAdmin\images\ServerLogins_S_Ico.gif" />
+    <Content Include="SqlAdmin\images\ServerRoles_Ico.gif" />
+    <Content Include="SqlAdmin\images\Server_Ico.gif" />
+    <Content Include="SqlAdmin\images\Server_Logins.gif" />
+    <Content Include="SqlAdmin\images\Server_Roles.gif" />
+    <Content Include="SqlAdmin\images\skyBlue.gif" />
+    <Content Include="SqlAdmin\images\spacer.gif" />
+    <Content Include="SqlAdmin\images\Sproc_Ico.gif" />
+    <Content Include="SqlAdmin\images\Table_Ico.gif" />
+    <Content Include="SqlAdmin\images\transparent.gif" />
+    <Content Include="SqlAdmin\images\User_Ico.gif" />
+    <Content Include="SqlAdmin\images\Wizards_Ico.gif" />
+    <Content Include="SqlAdmin\Import.aspx" />
+    <Content Include="SqlAdmin\LoginRolePicker.ascx" />
+    <Content Include="SqlAdmin\Logout.aspx" />
+    <Content Include="SqlAdmin\QueryDatabase.aspx" />
+    <Content Include="SqlAdmin\RenameTable.aspx" />
+    <Content Include="SqlAdmin\Security.aspx" />
+    <Content Include="SqlAdmin\ServerLogins.aspx" />
+    <Content Include="SqlAdmin\ServerRoles.aspx" />
+    <Content Include="SqlAdmin\StoredProcedures.aspx" />
+    <Content Include="SqlAdmin\Tables.aspx" />
+    <Content Include="SqlAdmin\Toolbars\DatabaseLocation.ascx" />
+    <Content Include="SqlAdmin\Toolbars\DatabaseToolbar.ascx" />
+    <Content Include="SqlAdmin\Toolbars\HelpLogoutToolbar.ascx" />
+    <Content Include="SqlAdmin\Toolbars\ServerLocation.ascx" />
+    <Content Include="SqlAdmin\Toolbars\ServerToolbar.ascx" />
+    <Content Include="SqlAdmin\Toolbars\TableLocation.ascx" />
+    <Content Include="UserControl\BuddyList.ascx" />
+    <Content Include="UserControl\cal\calendar.gif" />
+    <Content Include="UserControl\cal\calendar.jpg" />
+    <Content Include="UserControl\cal\close.gif" />
+    <Content Include="UserControl\cal\divider.gif" />
+    <Content Include="UserControl\cal\drop1.gif" />
+    <Content Include="UserControl\cal\drop2.gif" />
+    <Content Include="UserControl\cal\left1.gif" />
+    <Content Include="UserControl\cal\left2.gif" />
+    <Content Include="UserControl\cal\popcalendar.css" />
+    <Content Include="UserControl\cal\popcalendar.js" />
+    <Content Include="UserControl\cal\right1.gif" />
+    <Content Include="UserControl\cal\right2.gif" />
+    <Content Include="UserControl\cal\up2.gif" />
+    <Content Include="UserControl\DateSelector.ascx" />
+    <Content Include="UserControl\DepSale.ascx" />
+    <Content Include="UserControl\foot.ascx" />
+    <Content Include="UserControl\head.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessDeny.aspx.cs">
+      <DependentUpon>AccessDeny.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessDeny.aspx.designer.cs">
+      <DependentUpon>AccessDeny.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Re.zh-CN.designer.cs">
+      <DependentUpon>Re.zh-CN.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="App_GlobalResources\Re.zh-TW.designer.cs">
+      <DependentUpon>Re.zh-TW.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Re.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Re.resx</DependentUpon>
+    </Compile>
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonUtil\ChineseCalendar.cs" />
+    <Compile Include="CommonUtil\ClaEmail.cs" />
+    <Compile Include="CommonUtil\CompressFileHandler.ashx.cs">
+      <DependentUpon>CompressFileHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonUtil\CookieHelper.cs" />
+    <Compile Include="CommonUtil\DropDownList.cs" />
+    <Compile Include="CommonUtil\log4netHelper.cs" />
+    <Compile Include="CommonUtil\LogUserInfo.cs" />
+    <Compile Include="CommonUtil\NPOIExtension.cs" />
+    <Compile Include="CommonUtil\PinYin.cs" />
+    <Compile Include="CommonUtil\System.String.cs" />
+    <Compile Include="CommonUtil\Zipper.cs" />
+    <Compile Include="CRM\BaseInfo\frmProvince.aspx.cs">
+      <DependentUpon>frmProvince.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmProvince.aspx.designer.cs">
+      <DependentUpon>frmProvince.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmProvinceEdit.aspx.cs">
+      <DependentUpon>frmProvinceEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmProvinceEdit.aspx.designer.cs">
+      <DependentUpon>frmProvinceEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\Excel\frmExport.aspx.cs">
+      <DependentUpon>frmExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\Excel\frmExport.aspx.designer.cs">
+      <DependentUpon>frmExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\Excel\frmImport.aspx.cs">
+      <DependentUpon>frmImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\Excel\frmImport.aspx.designer.cs">
+      <DependentUpon>frmImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmAddSales.aspx.cs">
+      <DependentUpon>frmAddSales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmAddSales.aspx.designer.cs">
+      <DependentUpon>frmAddSales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmCategory.aspx.cs">
+      <DependentUpon>frmCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmCategory.aspx.designer.cs">
+      <DependentUpon>frmCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmCategoryEdit.aspx.cs">
+      <DependentUpon>frmCategoryEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmCategoryEdit.aspx.designer.cs">
+      <DependentUpon>frmCategoryEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmChangePwd.aspx.cs">
+      <DependentUpon>frmChangePwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmChangePwd.aspx.designer.cs">
+      <DependentUpon>frmChangePwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmAction.aspx.cs">
+      <DependentUpon>frmAction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmAction.aspx.designer.cs">
+      <DependentUpon>frmAction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmActionEdit.aspx.cs">
+      <DependentUpon>frmActionEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmActionEdit.aspx.designer.cs">
+      <DependentUpon>frmActionEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmAuditLog.aspx.cs">
+      <DependentUpon>frmAuditLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmAuditLog.aspx.designer.cs">
+      <DependentUpon>frmAuditLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmBaseInfo.aspx.cs">
+      <DependentUpon>frmBaseInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmBaseInfo.aspx.designer.cs">
+      <DependentUpon>frmBaseInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmContactEdit.aspx.cs">
+      <DependentUpon>frmContactEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmContactEdit.aspx.designer.cs">
+      <DependentUpon>frmContactEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmContactType.aspx.cs">
+      <DependentUpon>frmContactType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmContactType.aspx.designer.cs">
+      <DependentUpon>frmContactType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmContactTypeEdit.aspx.cs">
+      <DependentUpon>frmContactTypeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmContactTypeEdit.aspx.designer.cs">
+      <DependentUpon>frmContactTypeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCountry.aspx.cs">
+      <DependentUpon>frmCountry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCountry.aspx.designer.cs">
+      <DependentUpon>frmCountry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCountryEdit.aspx.cs">
+      <DependentUpon>frmCountryEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCountryEdit.aspx.designer.cs">
+      <DependentUpon>frmCountryEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmCustomer.aspx.cs">
+      <DependentUpon>frmCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmCustomer.aspx.designer.cs">
+      <DependentUpon>frmCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmCustomerDeal.aspx.cs">
+      <DependentUpon>frmCustomerDeal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmCustomerDeal.aspx.designer.cs">
+      <DependentUpon>frmCustomerDeal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmCustomerEdit.aspx.cs">
+      <DependentUpon>frmCustomerEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmCustomerEdit.aspx.designer.cs">
+      <DependentUpon>frmCustomerEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerEmpNum.aspx.cs">
+      <DependentUpon>frmCustomerEmpNum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerEmpNum.aspx.designer.cs">
+      <DependentUpon>frmCustomerEmpNum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerEmpNumEdit.aspx.cs">
+      <DependentUpon>frmCustomerEmpNumEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerEmpNumEdit.aspx.designer.cs">
+      <DependentUpon>frmCustomerEmpNumEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerFrom.aspx.cs">
+      <DependentUpon>frmCustomerFrom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerFrom.aspx.designer.cs">
+      <DependentUpon>frmCustomerFrom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerFromEdit.aspx.cs">
+      <DependentUpon>frmCustomerFromEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerFromEdit.aspx.designer.cs">
+      <DependentUpon>frmCustomerFromEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerIndustry.aspx.cs">
+      <DependentUpon>frmCustomerIndustry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerIndustry.aspx.designer.cs">
+      <DependentUpon>frmCustomerIndustry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerIndustryEdit.aspx.cs">
+      <DependentUpon>frmCustomerIndustryEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerIndustryEdit.aspx.designer.cs">
+      <DependentUpon>frmCustomerIndustryEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerRelation.aspx.cs">
+      <DependentUpon>frmCustomerRelation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerRelation.aspx.designer.cs">
+      <DependentUpon>frmCustomerRelation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerRelationEdit.aspx.cs">
+      <DependentUpon>frmCustomerRelationEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerRelationEdit.aspx.designer.cs">
+      <DependentUpon>frmCustomerRelationEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerStatus.aspx.cs">
+      <DependentUpon>frmCustomerStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerStatus.aspx.designer.cs">
+      <DependentUpon>frmCustomerStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerStatusEdit.aspx.cs">
+      <DependentUpon>frmCustomerStatusEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerStatusEdit.aspx.designer.cs">
+      <DependentUpon>frmCustomerStatusEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerType.aspx.cs">
+      <DependentUpon>frmCustomerType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerType.aspx.designer.cs">
+      <DependentUpon>frmCustomerType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerTypeEdit.aspx.cs">
+      <DependentUpon>frmCustomerTypeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\BaseInfo\frmCustomerTypeEdit.aspx.designer.cs">
+      <DependentUpon>frmCustomerTypeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmDepartment.aspx.cs">
+      <DependentUpon>frmDepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmDepartment.aspx.designer.cs">
+      <DependentUpon>frmDepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmDepartmentEdit.aspx.cs">
+      <DependentUpon>frmDepartmentEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmDepartmentEdit.aspx.designer.cs">
+      <DependentUpon>frmDepartmentEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmProduct.aspx.cs">
+      <DependentUpon>frmProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmProduct.aspx.designer.cs">
+      <DependentUpon>frmProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmProductEdit.aspx.cs">
+      <DependentUpon>frmProductEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmProductEdit.aspx.designer.cs">
+      <DependentUpon>frmProductEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmReport.aspx.cs">
+      <DependentUpon>frmReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmReport.aspx.designer.cs">
+      <DependentUpon>frmReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmRole.aspx.cs">
+      <DependentUpon>frmRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmRole.aspx.designer.cs">
+      <DependentUpon>frmRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmRoleEdit.aspx.cs">
+      <DependentUpon>frmRoleEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmRoleEdit.aspx.designer.cs">
+      <DependentUpon>frmRoleEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmSendEmail.aspx.cs">
+      <DependentUpon>frmSendEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmSendEmail.aspx.designer.cs">
+      <DependentUpon>frmSendEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmUserLoginHistory.aspx.cs">
+      <DependentUpon>frmUserLoginHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmUserActions.aspx.cs">
+      <DependentUpon>frmUserActions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmUserActions.aspx.designer.cs">
+      <DependentUpon>frmUserActions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmUserCustTransfer.aspx.cs">
+      <DependentUpon>frmUserCustTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmUserCustTransfer.aspx.designer.cs">
+      <DependentUpon>frmUserCustTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmUserLoginHistory.aspx.designer.cs">
+      <DependentUpon>frmUserLoginHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmVerUpdate.aspx.cs">
+      <DependentUpon>frmVerUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmVerUpdate.aspx.designer.cs">
+      <DependentUpon>frmVerUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\GTD\frmReservationMain.aspx.cs">
+      <DependentUpon>frmReservationMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\GTD\frmReservationMain.aspx.designer.cs">
+      <DependentUpon>frmReservationMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\GTD\frmSchedule.aspx.cs">
+      <DependentUpon>frmSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\GTD\frmSchedule.aspx.designer.cs">
+      <DependentUpon>frmSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmSystem.aspx.cs">
+      <DependentUpon>frmSystem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmSystem.aspx.designer.cs">
+      <DependentUpon>frmSystem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmSystemEdit.aspx.cs">
+      <DependentUpon>frmSystemEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmSystemEdit.aspx.designer.cs">
+      <DependentUpon>frmSystemEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmUser.aspx.cs">
+      <DependentUpon>frmUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmUser.aspx.designer.cs">
+      <DependentUpon>frmUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\frmUserEdit.aspx.cs">
+      <DependentUpon>frmUserEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\frmUserEdit.aspx.designer.cs">
+      <DependentUpon>frmUserEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\GTD\frmScheduleByWeek.aspx.cs">
+      <DependentUpon>frmScheduleByWeek.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\GTD\frmScheduleByWeek.aspx.designer.cs">
+      <DependentUpon>frmScheduleByWeek.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM\GTD\frmTaskEdit.aspx.cs">
+      <DependentUpon>frmTaskEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM\GTD\frmTaskEdit.aspx.designer.cs">
+      <DependentUpon>frmTaskEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM_Chem\frmActionEdit.aspx.cs">
+      <DependentUpon>frmActionEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM_Chem\frmActionEdit.aspx.designer.cs">
+      <DependentUpon>frmActionEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM_Chem\frmCustomer.aspx.cs">
+      <DependentUpon>frmCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM_Chem\frmCustomer.aspx.designer.cs">
+      <DependentUpon>frmCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM_Chem\frmCustomerBrief.aspx.cs">
+      <DependentUpon>frmCustomerBrief.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM_Chem\frmCustomerBrief.aspx.designer.cs">
+      <DependentUpon>frmCustomerBrief.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM_Chem\frmCustomerDeal.aspx.cs">
+      <DependentUpon>frmCustomerDeal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM_Chem\frmCustomerDeal.aspx.designer.cs">
+      <DependentUpon>frmCustomerDeal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CRM_Chem\frmCustomerEdit.aspx.cs">
+      <DependentUpon>frmCustomerEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CRM_Chem\frmCustomerEdit.aspx.designer.cs">
+      <DependentUpon>frmCustomerEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\frmBillReport.aspx.cs">
+      <DependentUpon>frmBillReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\frmBillReport.aspx.designer.cs">
+      <DependentUpon>frmBillReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\frmDailyIssue.aspx.cs">
+      <DependentUpon>frmDailyIssue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\frmDailyIssue.aspx.designer.cs">
+      <DependentUpon>frmDailyIssue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\frmTicket.aspx.cs">
+      <DependentUpon>frmTicket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\frmTicket.aspx.designer.cs">
+      <DependentUpon>frmTicket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\frmTicketEdit.aspx.cs">
+      <DependentUpon>frmTicketEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\frmTicketEdit.aspx.designer.cs">
+      <DependentUpon>frmTicketEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\frmVisa.aspx.cs">
+      <DependentUpon>frmVisa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\frmVisa.aspx.designer.cs">
+      <DependentUpon>frmVisa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\PdfView.aspx.cs">
+      <DependentUpon>PdfView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\PdfView.aspx.designer.cs">
+      <DependentUpon>PdfView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\UCViewSwf.ascx.cs">
+      <DependentUpon>UCViewSwf.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\UCViewSwf.ascx.designer.cs">
+      <DependentUpon>UCViewSwf.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\frmVisaEdit.aspx.cs">
+      <DependentUpon>frmVisaEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\frmVisaEdit.aspx.designer.cs">
+      <DependentUpon>frmVisaEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\Customer.ashx.cs">
+      <DependentUpon>Customer.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Service\Customer.asmx.cs">
+      <DependentUpon>Customer.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\Columns.aspx.cs">
+      <DependentUpon>Columns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\Columns.aspx.designer.cs">
+      <DependentUpon>Columns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\CreateDatabase.aspx.cs">
+      <DependentUpon>CreateDatabase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\CreateDatabase.aspx.designer.cs">
+      <DependentUpon>CreateDatabase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\CreateStoredProcedure.aspx.cs">
+      <DependentUpon>CreateStoredProcedure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\CreateStoredProcedure.aspx.designer.cs">
+      <DependentUpon>CreateStoredProcedure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\CreateTable.aspx.cs">
+      <DependentUpon>CreateTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\CreateTable.aspx.designer.cs">
+      <DependentUpon>CreateTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\DatabaseProperties.aspx.cs">
+      <DependentUpon>DatabaseProperties.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\DatabaseProperties.aspx.designer.cs">
+      <DependentUpon>DatabaseProperties.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\DatabaseRoles.aspx.cs">
+      <DependentUpon>DatabaseRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\DatabaseRoles.aspx.designer.cs">
+      <DependentUpon>DatabaseRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\Databases.aspx.cs">
+      <DependentUpon>Databases.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\Databases.aspx.designer.cs">
+      <DependentUpon>Databases.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\DatabaseUsers.aspx.cs">
+      <DependentUpon>DatabaseUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\DatabaseUsers.aspx.designer.cs">
+      <DependentUpon>DatabaseUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\DeleteColumn.aspx.cs">
+      <DependentUpon>DeleteColumn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\DeleteColumn.aspx.designer.cs">
+      <DependentUpon>DeleteColumn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\DeleteDatabase.aspx.cs">
+      <DependentUpon>DeleteDatabase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\DeleteDatabase.aspx.designer.cs">
+      <DependentUpon>DeleteDatabase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\DeleteStoredProcedure.aspx.cs">
+      <DependentUpon>DeleteStoredProcedure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\DeleteStoredProcedure.aspx.designer.cs">
+      <DependentUpon>DeleteStoredProcedure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\DeleteTable.aspx.cs">
+      <DependentUpon>DeleteTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\DeleteTable.aspx.designer.cs">
+      <DependentUpon>DeleteTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\EditColumn.aspx.cs">
+      <DependentUpon>EditColumn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\EditColumn.aspx.designer.cs">
+      <DependentUpon>EditColumn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\EditStoredProcedure.aspx.cs">
+      <DependentUpon>EditStoredProcedure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\EditStoredProcedure.aspx.designer.cs">
+      <DependentUpon>EditStoredProcedure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\Export.aspx.cs">
+      <DependentUpon>Export.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\Export.aspx.designer.cs">
+      <DependentUpon>Export.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\HelpFooter.ascx.cs">
+      <DependentUpon>HelpFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\HelpFooter.ascx.designer.cs">
+      <DependentUpon>HelpFooter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\HelpHeader.ascx.cs">
+      <DependentUpon>HelpHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\HelpHeader.ascx.designer.cs">
+      <DependentUpon>HelpHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\Import.aspx.cs">
+      <DependentUpon>Import.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\Import.aspx.designer.cs">
+      <DependentUpon>Import.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\QueryDatabase.aspx.cs">
+      <DependentUpon>QueryDatabase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\QueryDatabase.aspx.designer.cs">
+      <DependentUpon>QueryDatabase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\RenameTable.aspx.cs">
+      <DependentUpon>RenameTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\RenameTable.aspx.designer.cs">
+      <DependentUpon>RenameTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\Security.aspx.cs">
+      <DependentUpon>Security.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\Security.aspx.designer.cs">
+      <DependentUpon>Security.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\ServerLogins.aspx.cs">
+      <DependentUpon>ServerLogins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\ServerLogins.aspx.designer.cs">
+      <DependentUpon>ServerLogins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\ServerRoles.aspx.cs">
+      <DependentUpon>ServerRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\ServerRoles.aspx.designer.cs">
+      <DependentUpon>ServerRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\StoredProcedures.aspx.cs">
+      <DependentUpon>StoredProcedures.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\StoredProcedures.aspx.designer.cs">
+      <DependentUpon>StoredProcedures.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\Tables.aspx.cs">
+      <DependentUpon>Tables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SqlAdmin\Help\Tables.aspx.designer.cs">
+      <DependentUpon>Tables.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\BuddyList.ascx.cs">
+      <DependentUpon>BuddyList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\BuddyList.ascx.designer.cs">
+      <DependentUpon>BuddyList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\DepSale.ascx.cs">
+      <DependentUpon>DepSale.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\DepSale.ascx.designer.cs">
+      <DependentUpon>DepSale.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\LoginHistory.ascx.cs">
+      <DependentUpon>LoginHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\LoginHistory.ascx.designer.cs">
+      <DependentUpon>LoginHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\RegionSale.ascx.cs">
+      <DependentUpon>RegionSale.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\RegionSale.ascx.designer.cs">
+      <DependentUpon>RegionSale.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\MonthlySale.ascx.cs">
+      <DependentUpon>MonthlySale.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\MonthlySale.ascx.designer.cs">
+      <DependentUpon>MonthlySale.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Top10Sale.ascx.cs">
+      <DependentUpon>Top10Sale.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\Top10Sale.ascx.designer.cs">
+      <DependentUpon>Top10Sale.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\foot.ascx.cs">
+      <DependentUpon>foot.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\foot.ascx.designer.cs">
+      <DependentUpon>foot.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\head.ascx.cs">
+      <DependentUpon>head.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\head.ascx.designer.cs">
+      <DependentUpon>head.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\TextArea.ascx.cs">
+      <DependentUpon>TextArea.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\TextArea.ascx.designer.cs">
+      <DependentUpon>TextArea.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Top10Cust.ascx.cs">
+      <DependentUpon>Top10Cust.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\Top10Cust.ascx.designer.cs">
+      <DependentUpon>Top10Cust.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage\Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Re.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Re.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Login.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Terry.CRM.Entity\Terry.CRM.Entity.csproj">
+      <Project>{18AA8BC5-4435-4607-8852-533BC3ACE03F}</Project>
+      <Name>Terry.CRM.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Terry.CRM.Service\Terry.CRM.Service.csproj">
+      <Project>{04639AC1-0F99-4182-9661-CD65247E68D4}</Project>
+      <Name>Terry.CRM.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AccessDeny.aspx" />
+    <Content Include="CRM\Excel\frmExport.aspx" />
+    <Content Include="CRM\Excel\frmImport.aspx" />
+    <Content Include="CRM\frmAddSales.aspx" />
+    <Content Include="CRM\frmChangePwd.aspx" />
+    <Content Include="CRM\frmAction.aspx" />
+    <Content Include="CRM\frmActionEdit.aspx" />
+    <Content Include="CRM\frmAuditLog.aspx" />
+    <Content Include="CRM\BaseInfo\frmBaseInfo.aspx" />
+    <Content Include="CRM\frmContactEdit.aspx" />
+    <Content Include="CRM\BaseInfo\frmContactType.aspx" />
+    <Content Include="CRM\BaseInfo\frmContactTypeEdit.aspx" />
+    <Content Include="CRM\BaseInfo\frmCountry.aspx" />
+    <Content Include="CRM\BaseInfo\frmCountryEdit.aspx" />
+    <Content Include="CRM\frmCustomer.aspx" />
+    <Content Include="CRM\frmCustomerDeal.aspx" />
+    <Content Include="CRM\frmCustomerEdit.aspx" />
+    <Content Include="CRM\BaseInfo\frmCustomerEmpNum.aspx" />
+    <Content Include="CRM\BaseInfo\frmCustomerEmpNumEdit.aspx" />
+    <Content Include="CRM\BaseInfo\frmCustomerFrom.aspx" />
+    <Content Include="CRM\BaseInfo\frmCustomerFromEdit.aspx" />
+    <Content Include="CRM\BaseInfo\frmCustomerIndustry.aspx" />
+    <Content Include="CRM\BaseInfo\frmCustomerIndustryEdit.aspx" />
+    <Content Include="CRM\BaseInfo\frmCustomerRelation.aspx" />
+    <Content Include="CRM\BaseInfo\frmCustomerRelationEdit.aspx" />
+    <Content Include="CRM\BaseInfo\frmCustomerStatus.aspx" />
+    <Content Include="CRM\BaseInfo\frmCustomerStatusEdit.aspx" />
+    <Content Include="CRM\BaseInfo\frmCustomerType.aspx" />
+    <Content Include="CRM\BaseInfo\frmCustomerTypeEdit.aspx" />
+    <Content Include="CRM\frmDepartment.aspx" />
+    <Content Include="CRM\frmDepartmentEdit.aspx" />
+    <Content Include="CRM\frmProduct.aspx" />
+    <Content Include="CRM\frmProductEdit.aspx" />
+    <Content Include="CRM\frmRole.aspx" />
+    <Content Include="CRM\frmRoleEdit.aspx" />
+    <Content Include="CRM\frmUserActions.aspx" />
+    <Content Include="CRM\frmUserCustTransfer.aspx" />
+    <Content Include="CRM\frmVerUpdate.aspx" />
+    <Content Include="CRM\GTD\frmSchedule.aspx" />
+    <Content Include="CRM\frmSystem.aspx" />
+    <Content Include="CRM\frmSystemEdit.aspx" />
+    <Content Include="CRM\frmUser.aspx" />
+    <Content Include="CRM\frmUserEdit.aspx" />
+    <Content Include="CRM\GTD\frmTaskEdit.aspx" />
+    <Content Include="CRM\Login.aspx" />
+    <Content Include="css\BaseCalendar.css" />
+    <Content Include="css\css2.css" />
+    <Content Include="css\jquery.alerts.css" />
+    <Content Include="css\jquery.autocomplete.css" />
+    <Content Include="css\jquery.treeTable.css" />
+    <Content Include="css\lightBlue.css" />
+    <Content Include="css\Master.css" />
+    <Content Include="css\popBox.css" />
+    <Content Include="css\subModal.css" />
+    <Content Include="Global.asax" />
+    <Content Include="images\abandon.png" />
+    <Content Include="images\abandon_.png" />
+    <Content Include="images\accomplish.png" />
+    <Content Include="images\accomplish_.png" />
+    <Content Include="images\add.png" />
+    <Content Include="images\AddressTitle.png" />
+    <Content Include="images\addrow.png" />
+    <Content Include="images\addrow_.png" />
+    <Content Include="images\add_.png" />
+    <Content Include="images\admin_bg_2.gif" />
+    <Content Include="images\admin_left_0.gif" />
+    <Content Include="images\admin_left_1.gif" />
+    <Content Include="images\admin_left_2.gif" />
+    <Content Include="images\admin_left_3.gif" />
+    <Content Include="images\admin_left_4.gif" />
+    <Content Include="images\admin_left_5.gif" />
+    <Content Include="images\admin_left_6.gif" />
+    <Content Include="images\admin_left_7.gif" />
+    <Content Include="images\admin_left_8.gif" />
+    <Content Include="images\admin_left_9.gif" />
+    <Content Include="images\adown.png" />
+    <Content Include="images\all.PNG" />
+    <Content Include="images\all_.PNG" />
+    <Content Include="images\anew.png" />
+    <Content Include="images\anew_.png" />
+    <Content Include="images\arrow.gif" />
+    <Content Include="images\arrow_over.gif" />
+    <Content Include="images\auditing.png" />
+    <Content Include="images\auditing_.png" />
+    <Content Include="images\back.png" />
+    <Content Include="images\bg-table-thead.png" />
+    <Content Include="images\bg.gif" />
+    <Content Include="images\bid.gif" />
+    <Content Include="images\box_header_bg_new_4.gif" />
+    <Content Include="images\box_search_bg_4.gif" />
+    <Content Include="images\bullet.gif" />
+    <Content Include="images\button.gif" />
+    <Content Include="images\button2.gif" />
+    <Content Include="images\button\ok.gif" />
+    <Content Include="images\cancel.png" />
+    <Content Include="images\cancel_.png" />
+    <Content Include="images\CANN.png" />
+    <Content Include="images\chalkitup.png" />
+    <Content Include="images\chalkitup_.png" />
+    <Content Include="images\check.png" />
+    <Content Include="images\check_.png" />
+    <Content Include="images\choose.png" />
+    <Content Include="images\choose_.png" />
+    <Content Include="images\clean.png" />
+    <Content Include="images\clean_.png" />
+    <Content Include="images\close.gif" />
+    <Content Include="images\close.png" />
+    <Content Include="images\close1.gif" />
+    <Content Include="images\close_.png" />
+    <Content Include="images\collect.png" />
+    <Content Include="images\collect_.png" />
+    <Content Include="images\compare.png" />
+    <Content Include="images\compare_.png" />
+    <Content Include="images\compositor.png" />
+    <Content Include="images\compositor_.png" />
+    <Content Include="images\confirm.png" />
+    <Content Include="images\confirm_.png" />
+    <Content Include="images\contract.png" />
+    <Content Include="images\copy.png" />
+    <Content Include="images\copy_.png" />
+    <Content Include="images\CostProfit.png" />
+    <Content Include="images\craftwork.png" />
+    <Content Include="images\craftwork_.png" />
+    <Content Include="images\cutout.png" />
+    <Content Include="images\cutout_.png" />
+    <Content Include="images\deal.gif" />
+    <Content Include="images\decompose.png" />
+    <Content Include="images\decompose_.png" />
+    <Content Include="images\default.css" />
+    <Content Include="images\del.gif" />
+    <Content Include="images\delete.png" />
+    <Content Include="images\delete_.png" />
+    <Content Include="images\down.gif" />
+    <Content Include="images\down1.gif" />
+    <Content Include="images\edit.png" />
+    <Content Include="images\email_new.gif" />
+    <Content Include="images\excel.gif" />
+    <Content Include="images\exit.png" />
+    <Content Include="images\exit_.png" />
+    <Content Include="images\expand.gif" />
+    <Content Include="images\expandCheck.gif" />
+    <Content Include="images\father.png" />
+    <Content Include="images\father_.png" />
+    <Content Include="images\file.png" />
+    <Content Include="images\file_.png" />
+    <Content Include="images\filter_.png" />
+    <Content Include="images\filtrate.png" />
+    <Content Include="images\filtrate_.png" />
+    <Content Include="images\first.png" />
+    <Content Include="images\first_.png" />
+    <Content Include="images\folder.png" />
+    <Content Include="images\format.png" />
+    <Content Include="images\format_.png" />
+    <Content Include="images\frame_.png" />
+    <Content Include="images\front.png" />
+    <Content Include="images\front_.png" />
+    <Content Include="images\GIN.png" />
+    <Content Include="images\GON.png" />
+    <Content Include="images\goto.png" />
+    <Content Include="images\goto_.png" />
+    <Content Include="images\goup.png" />
+    <Content Include="images\goupstep.png" />
+    <Content Include="images\goupstep_.png" />
+    <Content Include="images\goup_.png" />
+    <Content Include="images\GRN.png" />
+    <Content Include="images\h2_hover.gif" />
+    <Content Include="images\header_bg.gif" />
+    <Content Include="images\help.gif" />
+    <Content Include="images\help.png" />
+    <Content Include="images\helpold.png" />
+    <Content Include="images\helpold_.png" />
+    <Content Include="images\help_.png" />
+    <Content Include="images\home.gif" />
+    <Content Include="images\ico-11.gif" />
+    <Content Include="images\ico1.gif" />
+    <Content Include="images\icon-viewpic.gif" />
+    <Content Include="images\icon.gif" />
+    <Content Include="images\icon02.gif" />
+    <Content Include="images\icon03.gif" />
+    <Content Include="images\icon_02.gif" />
+    <Content Include="images\icon_bigpic.gif" />
+    <Content Include="images\icon_no.gif" />
+    <Content Include="images\icon_small.gif" />
+    <Content Include="images\icon_sort.gif" />
+    <Content Include="images\icon_yes.gif" />
+    <Content Include="images\ico_no.gif" />
+    <Content Include="images\important.gif" />
+    <Content Include="images\info.gif" />
+    <Content Include="images\inspect.png" />
+    <Content Include="images\inspect_.png" />
+    <Content Include="images\interfix.png" />
+    <Content Include="images\interfix_.png" />
+    <Content Include="images\i_home.gif" />
+    <Content Include="images\JiSu_Admin_03.gif" />
+    <Content Include="images\JiSu_Admin_05.gif" />
+    <Content Include="images\JiSu_Admin_06.gif" />
+    <Content Include="images\JiSu_Admin_11.gif" />
+    <Content Include="images\JiSu_Admin_12.gif" />
+    <Content Include="images\JiSu_Admin_14.gif" />
+    <Content Include="images\JiSu_Admin_22.gif" />
+    <Content Include="images\JiSu_Admin_23.gif" />
+    <Content Include="images\JiSu_Admin_25.gif" />
+    <Content Include="images\JiSu_Admin_28.gif" />
+    <Content Include="images\JiSu_Admin_30.gif" />
+    <Content Include="images\JiSu_Admin_32.gif" />
+    <Content Include="images\JiSu_Admin_34.gif" />
+    <Content Include="images\JiSu_Admin_37.gif" />
+    <Content Include="images\JiSu_Admin_40.gif" />
+    <Content Include="images\JiSu_Admin_46.gif" />
+    <Content Include="images\JiSu_Admin_48.gif" />
+    <Content Include="images\JiSu_Admin_49.gif" />
+    <Content Include="images\JiSu_Admin_51.gif" />
+    <Content Include="images\key.png" />
+    <Content Include="images\lairage.png" />
+    <Content Include="images\lairage_.png" />
+    <Content Include="images\last.png" />
+    <Content Include="images\lastly.png" />
+    <Content Include="images\lastly_.png" />
+    <Content Include="images\last_.png" />
+    <Content Include="images\left-corners.png" />
+    <Content Include="images\left-right.png" />
+    <Content Include="images\linkage.png" />
+    <Content Include="images\linkage_.png" />
+    <Content Include="images\lock.png" />
+    <Content Include="images\lock_.png" />
+    <Content Include="images\log.png" />
+    <Content Include="images\login.gif" />
+    <Content Include="images\login1.jpg" />
+    <Content Include="images\login2.jpg" />
+    <Content Include="images\login3.jpg" />
+    <Content Include="images\login4.jpg" />
+    <Content Include="images\loginman.gif" />
+    <Content Include="images\Login_03.gif" />
+    <Content Include="images\Login_04.gif" />
+    <Content Include="images\Login_05.gif" />
+    <Content Include="images\Login_06.gif" />
+    <Content Include="images\Login_08.gif" />
+    <Content Include="images\Login_09.gif" />
+    <Content Include="images\Login_10.gif" />
+    <Content Include="images\Login_11.gif" />
+    <Content Include="images\Login_14.gif" />
+    <Content Include="images\Login_16.gif" />
+    <Content Include="images\Login_17.gif" />
+    <Content Include="images\Login_18.gif" />
+    <Content Include="images\Login_19.gif" />
+    <Content Include="images\Login_21.gif" />
+    <Content Include="images\Login_en-US.gif" />
+    <Content Include="images\Login_zh-CN.gif" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo_en-US.png" />
+    <Content Include="images\logo_zh-cn-.png" />
+    <Content Include="images\logo_zh-cn.png" />
+    <Content Include="images\log_.png" />
+    <Content Include="images\maskBG.png" />
+    <Content Include="images\MenuBg.gif" />
+    <Content Include="images\m_contact.gif" />
+    <Content Include="images\m_opp.gif" />
+    <Content Include="images\m_stock.gif" />
+    <Content Include="images\m_system.gif" />
+    <Content Include="images\newadd.png" />
+    <Content Include="images\newadd_.png" />
+    <Content Include="images\new_.png" />
+    <Content Include="images\next.png" />
+    <Content Include="images\nextstep.png" />
+    <Content Include="images\nextstep_.png" />
+    <Content Include="images\next_.png" />
+    <Content Include="images\no.png" />
+    <Content Include="images\noaccess.gif" />
+    <Content Include="images\nofollow.gif" />
+    <Content Include="images\nokey.png" />
+    <Content Include="images\nopic.gif" />
+    <Content Include="images\note.png" />
+    <Content Include="images\notepad.jpg" />
+    <Content Include="images\note_.png" />
+    <Content Include="images\notice.gif" />
+    <Content Include="images\no_.png" />
+    <Content Include="images\open.gif" />
+    <Content Include="images\OPEN.png" />
+    <Content Include="images\OPEN_.png" />
+    <Content Include="images\order.png" />
+    <Content Include="images\Output.PNG" />
+    <Content Include="images\Output_.PNG" />
+    <Content Include="images\page_white_text.png" />
+    <Content Include="images\particular.png" />
+    <Content Include="images\particular_.png" />
+    <Content Include="images\pic1.gif" />
+    <Content Include="images\pic2.gif" />
+    <Content Include="images\pic3.gif" />
+    <Content Include="images\pic4.gif" />
+    <Content Include="images\plus.gif" />
+    <Content Include="images\poweredby.gif" />
+    <Content Include="images\preview.png" />
+    <Content Include="images\preview_.png" />
+    <Content Include="images\print.png" />
+    <Content Include="images\print_.png" />
+    <Content Include="images\query.png" />
+    <Content Include="images\query_.png" />
+    <Content Include="images\quit.png" />
+    <Content Include="images\quit_.png" />
+    <Content Include="images\refashion.png" />
+    <Content Include="images\refashion_.png" />
+    <Content Include="images\refurbish.png" />
+    <Content Include="images\refurbish_.png" />
+    <Content Include="images\replace.png" />
+    <Content Include="images\replace_.png" />
+    <Content Include="images\report.gif" />
+    <Content Include="images\reverse.png" />
+    <Content Include="images\reverse_.png" />
+    <Content Include="images\revise.png" />
+    <Content Include="images\revise_.png" />
+    <Content Include="images\right-corners.png" />
+    <Content Include="images\rss.png" />
+    <Content Include="images\save.png" />
+    <Content Include="images\save_.png" />
+    <Content Include="images\search.gif" />
+    <Content Include="images\search.png" />
+    <Content Include="images\search_.png" />
+    <Content Include="images\search_bu.gif" />
+    <Content Include="images\setup.png" />
+    <Content Include="images\setup_.png" />
+    <Content Include="images\shadow.png" />
+    <Content Include="images\shipment.png" />
+    <Content Include="images\show.gif" />
+    <Content Include="images\shut.png" />
+    <Content Include="images\shut_.png" />
+    <Content Include="images\sidebar_bg.gif" />
+    <Content Include="images\sidebar_blue_v2.gif" />
+    <Content Include="images\sidebar_header_icons.gif" />
+    <Content Include="images\soda-stacks.jpg" />
+    <Content Include="images\son.png" />
+    <Content Include="images\son_.png" />
+    <Content Include="images\spacer.gif" />
+    <Content Include="images\speed.png" />
+    <Content Include="images\speed_.png" />
+    <Content Include="images\su.gif" />
+    <Content Include="images\summary.png" />
+    <Content Include="images\summary_.png" />
+    <Content Include="images\superior.png" />
+    <Content Include="images\superior_.png" />
+    <Content Include="images\tableHeader.gif" />
+    <Content Include="images\tab_background.gif" />
+    <Content Include="images\tab_background.png" />
+    <Content Include="images\tel.gif" />
+    <Content Include="images\title.gif" />
+    <Content Include="images\title1.gif" />
+    <Content Include="images\title_bg_quit.gif" />
+    <Content Include="images\toggle-collapse-dark.png" />
+    <Content Include="images\toggle-collapse-light.png" />
+    <Content Include="images\toggle-expand-dark.png" />
+    <Content Include="images\toggle-expand-light.png" />
+    <Content Include="images\tool-sprites.gif" />
+    <Content Include="images\top-bottom.png" />
+    <Content Include="images\Top1.jpg" />
+    <Content Include="images\top4.gif" />
+    <Content Include="images\topnav.gif" />
+    <Content Include="images\topnavmnu.gif" />
+    <Content Include="images\up.gif" />
+    <Content Include="images\up1.gif" />
+    <Content Include="images\user.gif" />
+    <Content Include="images\user_avatar_large.png" />
+    <Content Include="images\v4_footer.gif" />
+    <Content Include="images\v4_tabs_bg.gif" />
+    <Content Include="images\visit.gif" />
+    <Content Include="Js\checkform.js" />
+    <Content Include="Js\CheckForm_demo3.htm" />
+    <Content Include="Js\common.js" />
+    <Content Include="Js\datepicker\calendar.js" />
+    <Content Include="Js\datepicker\config.js" />
+    <Content Include="Js\datepicker\lang\en.js" />
+    <Content Include="Js\datepicker\lang\zh-cn.js" />
+    <Content Include="Js\datepicker\lang\zh-tw.js" />
+    <Content Include="Js\datepicker\My97DatePicker.htm" />
+    <Content Include="Js\datepicker\skin\datePicker.gif" />
+    <Content Include="Js\datepicker\skin\default\datepicker.css" />
+    <Content Include="Js\datepicker\skin\default\img.gif" />
+    <Content Include="Js\datepicker\skin\WdatePicker.css" />
+    <Content Include="Js\datepicker\skin\whyGreen\bg.jpg" />
+    <Content Include="Js\datepicker\skin\whyGreen\datepicker.css" />
+    <Content Include="Js\datepicker\skin\whyGreen\img.gif" />
+    <Content Include="Js\datepicker\WdatePicker.js" />
+    <Content Include="Js\demo.htm" />
+    <Content Include="Js\demo3.htm" />
+    <Content Include="Js\doPostBack.js" />
+    <Content Include="Js\DropDownCheckList.js" />
+    <Content Include="Js\Enter2Tab.js" />
+    <Content Include="Js\jquery-1.3.2-vsdoc2.js" />
+    <Content Include="Js\jquery-1.3.2.min.js" />
+    <Content Include="Js\jquery.alerts.js" />
+    <Content Include="Js\jquery.autocomplete.js" />
+    <Content Include="Js\jquery.js" />
+    <Content Include="Js\jquery.maxlength.js" />
+    <Content Include="Js\jquery.messager.js" />
+    <Content Include="Js\jquery.treeTable.js" />
+    <Content Include="Js\jquery.ui.draggable.js" />
+    <Content Include="Js\jquery.ui.js" />
+    <Content Include="Js\messager.htm" />
+    <Content Include="Js\popBox.js" />
+    <Content Include="Js\popBox.min.js" />
+    <Content Include="Js\prototype.js" />
+    <Content Include="Js\subModal.js" />
+    <Content Include="UserControl\TextArea.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Re.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Re.zh-CN.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Re.zh-TW.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Re.zh-TW.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="CRM\frmCategory.aspx" />
+    <Content Include="CRM\frmCategoryEdit.aspx" />
+    <Content Include="CRM\frmReport.aspx" />
+    <Content Include="CRM\frmUserLoginHistory.aspx" />
+    <Content Include="UserControl\LoginHistory.ascx" />
+    <Content Include="UserControl\RegionSale.ascx" />
+    <Content Include="UserControl\MonthlySale.ascx" />
+    <Content Include="UserControl\Top10Sale.ascx" />
+    <Content Include="UserControl\Top10Cust.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Service\Customer.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="App_LocalResources\" />
+    <Folder Include="App_Themes\default\" />
+    <Folder Include="logs\" />
+    <Folder Include="Upload\Attachment\" />
+    <Folder Include="Upload\CRMUpdate\" />
+    <Folder Include="Upload\Excel\" />
+    <Folder Include="Upload\Pdf\" />
+    <Folder Include="Upload\Swf\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CommonUtil\CompressFileHandler.ashx" />
+    <None Include="CRM\Excel\product_template.xls" />
+    <None Include="Invoice\Daily.xls" />
+    <None Include="Invoice\DailyIssue.xls" />
+    <None Include="Invoice\SalesByPerson_Template.xls" />
+    <None Include="Invoice\Ticket_Account_Template.xls" />
+    <None Include="Invoice\Ticket_Monthly_Template.xls" />
+    <None Include="Invoice\Ticket_Template.xls" />
+    <None Include="Invoice\Ticket_Template_2page.xls" />
+    <None Include="Invoice\Ticket_Template_arn.xls" />
+    <None Include="Invoice\Ticket_Template_arn_2page.xls" />
+    <None Include="Invoice\Ticket_Template_koln_2page.xls" />
+    <None Include="Invoice\Ticket_Template_maa.xls" />
+    <None Include="Invoice\Ticket_Template_maa_2page.xls" />
+    <None Include="Invoice\Ticket_Template_stug_2page.xls" />
+    <None Include="Invoice\Ticket_Template_koln.xls" />
+    <None Include="Invoice\Ticket_Template_stug.xls" />
+    <None Include="Invoice\Visa_Template.xls" />
+    <None Include="Invoice\Visa_Template_Maa.xls" />
+    <None Include="Invoice\Visum_Account_Template.xls" />
+    <None Include="Invoice\Visum_Account_Template_nl.xls" />
+    <None Include="Invoice\Visum_Template.xls" />
+    <None Include="Js\zeroclipboard\ZeroClipboard.as" />
+    <None Include="Js\zeroclipboard\ZeroClipboard.fla" />
+    <None Include="Js\zeroclipboard\ZeroClipboard10.as" />
+    <None Include="Js\zeroclipboard\ZeroClipboard10.fla" />
+    <Content Include="packages.config" />
+    <None Include="SqlAdmin\images\psd\Databases_Icon.psd" />
+    <None Include="SqlAdmin\images\psd\Database_Icon.psd" />
+    <None Include="SqlAdmin\images\psd\Properties_icon.psd" />
+    <None Include="SqlAdmin\images\psd\Query_Icon.psd" />
+    <None Include="SqlAdmin\images\psd\Roles_Icon.psd" />
+    <None Include="SqlAdmin\images\psd\ServerLogins_Small_Ico.psd" />
+    <None Include="SqlAdmin\images\psd\ServerRoles_Small_Icon.psd" />
+    <None Include="SqlAdmin\images\psd\Server_Icon.psd" />
+    <None Include="SqlAdmin\images\psd\Server_Logins.psd" />
+    <None Include="SqlAdmin\images\psd\Server_Roles.psd" />
+    <None Include="SqlAdmin\images\psd\Sproc_Icon.psd" />
+    <None Include="SqlAdmin\images\psd\Table_Icon.psd" />
+    <None Include="SqlAdmin\images\psd\User_Icon.psd" />
+    <None Include="SqlAdmin\images\psd\Wizards_Icon.psd" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SqlAdmin\licenses.licx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4358</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Terry.CRM.Web</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+</Project>
