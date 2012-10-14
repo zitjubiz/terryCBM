@@ -61,19 +61,19 @@ namespace Terry.CRM.Web.Invoice
 
             //按电话查找
             if (txtTel.Text != "")
-                Filter += " and CustTel like '%" + txtTel.Text + "%'";
+                Filter += " and CustTel like '%" + txtTel.Text.Trim() + "%'";
             //按订单金额查找
             if (txtAmount.Text != "")
-                Filter += " and TotalAmount=" + txtAmount.Text + "";
+                Filter += " and TotalAmount=" + txtAmount.Text.Trim() + "";
             //按email查找
             if (txtEmail.Text != "")
-                Filter += " and CustEmail like '%" + txtEmail.Text + "%'";
+                Filter += " and CustEmail like '%" + txtEmail.Text.Trim() + "%'";
             //按订单号查找
             //62-1205021   这份账单是 荷兰阿纳姆的，但是 出现在了德国 杜塞的分类里面，而且是置顶的
             if(ddlDept.Text!="")
                 Filter += " and InnerReferenceID like '" + ddlDept.Text + "%'";
             if (txtInnerReferenceID.Text != "")
-                Filter += " and InnerReferenceID like '%" + txtInnerReferenceID.Text + "%'";
+                Filter += " and InnerReferenceID like '%" + txtInnerReferenceID.Text.Trim() + "%'";
             //else
             //{
             //    if (ddlDept.Text != "" && ddlMonth.Text != "")

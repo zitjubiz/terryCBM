@@ -99,6 +99,7 @@
                                                 <asp:ListItem Value="21">杜塞尔多夫</asp:ListItem>
                                                 <asp:ListItem Value="22">斯图加特</asp:ListItem>
                                                 <asp:ListItem Value="23">科隆</asp:ListItem>
+                                                <asp:ListItem Value="25">纽伦堡</asp:ListItem>
                                                 <asp:ListItem Value="61">马城</asp:ListItem>
                                                 <asp:ListItem Value="62">阿纳姆</asp:ListItem>
                                             </asp:DropDownList>

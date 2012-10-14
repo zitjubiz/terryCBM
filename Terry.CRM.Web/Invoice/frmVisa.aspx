@@ -33,6 +33,7 @@
                                                 <asp:ListItem Value="51">杜塞</asp:ListItem>
                                                 <asp:ListItem Value="52">斯图</asp:ListItem>
                                                 <asp:ListItem Value="53">科隆</asp:ListItem>
+                                                <asp:ListItem Value="55">纽伦堡</asp:ListItem>
                                                 <asp:ListItem Value="68">荷兰</asp:ListItem>
                                             </asp:DropDownList>
                                         </td>

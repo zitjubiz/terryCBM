@@ -36,6 +36,7 @@
                                                 <asp:ListItem Value="21">杜塞</asp:ListItem>
                                                 <asp:ListItem Value="22">斯图</asp:ListItem>
                                                 <asp:ListItem Value="23">科隆</asp:ListItem>
+                                                <asp:ListItem Value="25">纽伦堡</asp:ListItem>
                                                 <asp:ListItem Value="61">麻城</asp:ListItem>
                                                 <asp:ListItem Value="62">阿纳姆</asp:ListItem>
                                                 <asp:ListItem Value="24">代理</asp:ListItem>

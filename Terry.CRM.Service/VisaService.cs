@@ -254,6 +254,8 @@ namespace Terry.CRM.Service
                 InnerReferenceID = "52";
             else if (DepName.Contains("Köln"))
                 InnerReferenceID = "53";
+            else if (DepName.Contains("Nürnberg"))
+                InnerReferenceID = "55";
 
             DateTime dtBookingDate = DateTime.Parse(BookingDate);
 

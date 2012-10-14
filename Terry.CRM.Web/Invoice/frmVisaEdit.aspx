@@ -60,6 +60,7 @@
                                                         <asp:ListItem Value="Schadow str.44 40212 Düsseldorf">Düsseldorf</asp:ListItem>
                                                         <asp:ListItem Value="Königstr.22 70173 Stuttgart">Stuttgart</asp:ListItem>
                                                         <asp:ListItem Value="Burgmauer 6•50667 Köln">Köln</asp:ListItem>
+                                                        <asp:ListItem Value="Bahnhofstr.27, 90402 Nürnberg">Nürnberg</asp:ListItem>
                                                         <asp:ListItem Value="Stationsplein 8-K 6221 BT,Maastricht">Maastricht</asp:ListItem>
                                                         <asp:ListItem Value="Willemsplein 13  6811 KB Arnhem">Arnhem</asp:ListItem>
                                                     </asp:DropDownList>

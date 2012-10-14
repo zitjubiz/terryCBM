@@ -318,13 +318,18 @@ namespace Terry.CRM.Service
         /// <summary>
         /// 同步成交数据到CRMCustomerDeal表
         /// (依赖Customer)
+        /// 在使用LINQ中更新数据或删除数据,总是出现找不到行或行已更改，最后发现每行数据中如果有值为NULL的时候，就会出现这个错误
+        /// 原来是LinqToSql的数据实体对象在进行更新时会进行字段检查.
         /// </summary>
         /// <param name="deal"></param>
         private void Sync2CRMCustomerDeal(string ContractNum)
         {
 
             //-------------- Delete & Insert CRMCustomerDeals Again -------------
-            this.CRMCustomerDeals.DeleteAllOnSubmit(this.CRMCustomerDeals.Where(t => t.ContractNum == ContractNum).ToList());
+            var OldDealList = this.CRMCustomerDeals.Where(t => t.ContractNum == ContractNum).ToList();
+            this.CRMCustomerDeals.DeleteAllOnSubmit(OldDealList);
+            this.dataCtx.SubmitChanges();
+
             var DealList = vw_BillDeals.Where(t => t.ContractNum.Equals(ContractNum) && t.Price > 0).ToList();
             foreach (var deal in DealList)
             {
@@ -347,6 +352,12 @@ namespace Terry.CRM.Service
                 entity.UnitPrice = deal.Price;
                 entity.Status = 0;
                 entity.Remark = "";
+                entity.Brand = "";
+                entity.PayTerm = "";
+                entity.Shipment = "";
+                entity.StockCategory = "";
+                entity.UnitPriceDesc = deal.Price.ToString();
+                entity.QtyDesc = deal.Qty.ToString();
                 this.CRMCustomerDeals.InsertOnSubmit(entity);
             }
             this.dataCtx.SubmitChanges();
@@ -354,10 +365,18 @@ namespace Terry.CRM.Service
 
         private void AddAuditLog(BillTicket oldEntity, BillTicket newEntity)
         {
-            string oldOwner, newOwner;
+            string oldOwner="", newOwner="";
             DataTable dtUser = base.GetUser();
-            oldOwner = dtUser.Select("UserID=" + oldEntity.CustOwnerID)[0]["UserFullName"].ToString();
-            newOwner = dtUser.Select("UserID=" + newEntity.CustOwnerID)[0]["UserFullName"].ToString();
+            DataRow[] drs = dtUser.Select("UserID=" + oldEntity.CustOwnerID);
+            if (drs.Length > 0)
+            {
+                oldOwner = drs[0]["UserFullName"].ToString();
+            }
+            drs = dtUser.Select("UserID=" + newEntity.CustOwnerID);
+            if (drs.Length > 0)
+            {
+                newOwner = drs[0]["UserFullName"].ToString();
+            }
 
 
             CRMAuditLog Log = new CRMAuditLog();
@@ -468,7 +487,9 @@ namespace Terry.CRM.Service
         //21-	Airticket DUS, 杜塞机票
         //22-	Airticket STR, 斯图机票
         //23-	Airticket CGN, 科隆机票
-        //28-	Visum, 德国签证,杜塞51 斯图52 科隆53
+        //25-   纽伦堡公司，机票账单号
+
+        //28-	Visum, 德国签证,杜塞51 斯图52 科隆53 纽伦堡55
         //61-	Airticket Maastricht
         //62-	Airticket Arnhem
 
@@ -483,6 +504,8 @@ namespace Terry.CRM.Service
                 InnerReferenceID = "23";
             else if (DepName.Contains("代理"))
                 InnerReferenceID = "24";
+            else if (DepName.Contains("Nürnberg"))
+                InnerReferenceID = "25";
             else if (DepName.Contains("Maastricht"))
                 InnerReferenceID = "61";
             else if(DepName.Contains("Arnhem"))

@@ -370,6 +370,8 @@ namespace Terry.CRM.Web.Invoice
                         TemplateFile = AppDomain.CurrentDomain.BaseDirectory + "Invoice\\Ticket_Template_stug_2page.xls";
                     else if (ddlDept.SelectedItem.Text == "Köln")
                         TemplateFile = AppDomain.CurrentDomain.BaseDirectory + "Invoice\\Ticket_Template_koln_2page.xls";
+                    else if (ddlDept.SelectedItem.Text == "Nürnberg")
+                        TemplateFile = AppDomain.CurrentDomain.BaseDirectory + "Invoice\\Ticket_Template_nurn_2page.xls";
                     else
                         TemplateFile = AppDomain.CurrentDomain.BaseDirectory + "Invoice\\Ticket_Template_2page.xls";
                 }
@@ -381,6 +383,8 @@ namespace Terry.CRM.Web.Invoice
                         TemplateFile = AppDomain.CurrentDomain.BaseDirectory + "Invoice\\Ticket_Template_stug.xls";
                     else if (ddlDept.SelectedItem.Text == "Köln")
                         TemplateFile = AppDomain.CurrentDomain.BaseDirectory + "Invoice\\Ticket_Template_koln.xls";
+                    else if (ddlDept.SelectedItem.Text == "Nürnberg")
+                        TemplateFile = AppDomain.CurrentDomain.BaseDirectory + "Invoice\\Ticket_Template_nurn.xls";
                     else
                         TemplateFile = AppDomain.CurrentDomain.BaseDirectory + "Invoice\\Ticket_Template.xls";
                 }

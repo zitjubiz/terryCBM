@@ -119,9 +119,11 @@ namespace Terry.CRM.Web.Invoice
             DataTable dt51 = Visa.GetVisumAccount(Year, Month,"51");
             DataTable dt52 = Visa.GetVisumAccount(Year, Month,"52");
             DataTable dt53 = Visa.GetVisumAccount(Year, Month,"53");
+            DataTable dt55 = Visa.GetVisumAccount(Year, Month, "55");
             dt.Merge(dt51);
             dt.Merge(dt52);
             dt.Merge(dt53);
+            dt.Merge(dt55);
 
             //read the template via FileStream, it is suggested to use FileAccess.Read to prevent file lock.
             FileStream file = new FileStream(AppDomain.CurrentDomain.BaseDirectory + "Invoice\\Visum_Account_Template.xls", FileMode.Open, FileAccess.Read);

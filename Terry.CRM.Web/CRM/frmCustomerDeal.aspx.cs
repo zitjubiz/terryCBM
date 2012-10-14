@@ -169,7 +169,7 @@ namespace Terry.CRM.Web.CRM
         //返回
         protected void btnBack_Click(object sender, EventArgs e)
         {
-            if (Request["returnUrl"] == "")
+            if (String.IsNullOrEmpty(Request["returnUrl"]))
                 Response.Redirect("frmCustomerEdit.aspx?id=" + Request["CustID"]);
             else
                 Response.Redirect(Request["returnUrl"]);

@@ -219,7 +219,8 @@ namespace Terry.CRM.Web.Invoice
         private void BindInfoByDep()
         {
             if (txtInnerReferenceID.Text.StartsWith("28") || txtInnerReferenceID.Text.StartsWith("51") ||
-                txtInnerReferenceID.Text.StartsWith("52") || txtInnerReferenceID.Text.StartsWith("53") )
+                txtInnerReferenceID.Text.StartsWith("52") || txtInnerReferenceID.Text.StartsWith("53") || 
+                txtInnerReferenceID.Text.StartsWith("55"))
             {
                 ddlPayMethod.Items.Clear();
                 ddlPayMethod.Items.Add("ahlung bei Abholung");
@@ -492,7 +493,7 @@ namespace Terry.CRM.Web.Invoice
         //click Excel Button
         protected void btnExcel_Click(object sender, EventArgs e)
         {
-            //德国签证由28改成51,52,53
+            //德国签证由28改成51,52,53,55
             if (txtInnerReferenceID.Text.StartsWith("28") || txtInnerReferenceID.Text.StartsWith("5"))
                 GermanVisa();
             else
